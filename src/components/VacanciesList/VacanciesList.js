@@ -3,10 +3,17 @@ import "./VacanciesList.css";
 import Vacancy from "../Vacancy/Vacancy";
 
 function VacanciesList({ vacancies }) {
+
+  const [active, setActive] = React.useState(false);
+
+  function handleActive() {
+    setActive(true)
+  }
+
   return (
     <section className="vacancies">
       <h2 className="vacancies__title">Вакансии</h2>
-      <button className="vacancies__btn vacancies__btn_active ">Для наставников</button>
+      <button className={active ? "vacancies__btn vacancies__btn_active " : "vacancies__btn"}>Для наставников</button>
       <button className="vacancies__btn">Для ревьюеров</button>
       <ul className="vacancies__list">
         {vacancies.map((vacancy) => (
