@@ -1,0 +1,39 @@
+
+.vacancy {
+  width: 330px;
+  height: 130px;
+  background-color: #545454;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: opacity 0.4s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+.vacancy:hover {
+  opacity: 0.8;
+}
+
+.vacancy__text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: white;
+}
+
+.vacancy__arrow {
+  width: 30px;
+  height: 30px;
+}
+
+.vacancy__capture {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: #2f2f2f;
+  padding-top: 15px;
+
+}
