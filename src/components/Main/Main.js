@@ -4,6 +4,7 @@ import Faculty from "../Faculty/Faculty";
 import VacanciesList from '../VacanciesList/VacanciesList';
 import vacancies from '../../assets/vacancies.json'
 import Tasks from "../Tasks/Tasks";
+import Expert from "../Expert/Expert";
 
 function Main() {
   return (
@@ -13,7 +14,7 @@ function Main() {
       <h1>тут будет блок2</h1>
       <h1>тут будет блок3</h1>
       <h1>тут будет блок4</h1>
-      <h1>тут будет блок5</h1>
+      <Expert/>
       <Faculty />
       <VacanciesList vacancies={vacancies} />
     </main>
