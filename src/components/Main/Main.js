@@ -3,7 +3,6 @@ import Share from "../Share/Share";
 import Faculty from "../Faculty/Faculty";
 import VacanciesList from '../VacanciesList/VacanciesList';
 import vacancies from '../../assets/vacancies.json'
-import Share from "../Share/Share";
 import Tasks from "../Tasks/Tasks";
 
 function Main() {
