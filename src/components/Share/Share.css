@@ -1,0 +1,48 @@
+.share {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 30px;
+  box-sizing: border-box;
+}
+
+.share__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 60%;
+}
+
+.share__header {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: #858585;
+}
+
+.share__header_type_color {
+  color: #262626;
+}
+
+.share__btn {
+  width: 461px;
+  height: 106px;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  transition: opasity .3s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+.share__btn:hover {
+  opacity: .8;
+}
+
+.share__image {
+  width: 380px;
+  height: 593px;
+  background-color: gray;
+}
