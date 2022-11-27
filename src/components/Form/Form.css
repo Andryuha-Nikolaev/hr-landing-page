@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 920px;
+  min-height: 942px;
+  padding: 65px 120px 65px 65px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: relative;
+}
+
+.form__input {
+  height: 60px;
+  border-radius: 20px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.form__input_size_l {
+  width: 665px;
+}
+
+.form__input_size_xs {
+  width:285px;
+}
+
+.form__input_size_s {
+  width:350px;
+}
