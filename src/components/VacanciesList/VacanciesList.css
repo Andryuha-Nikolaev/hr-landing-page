@@ -1,0 +1,62 @@
+.vacancies {
+  width: calc(100% - 165px * 2);
+  padding: 40px;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+.vacancies__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  background-color: #f2f2f2;
+  margin-bottom: 25px;
+}
+
+.vacancies__btn {
+  width: 280px;
+  height: 62px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  border: none;
+  border-bottom: solid 4px #d3d3d3;
+  color: #d3d3d3;
+  cursor: pointer;
+}
+
+.vacancies__btn_active {
+  border-bottom: solid 4px #535353;
+  color: #535353;
+  cursor: default;
+}
+
+.vacancies__list {
+  list-style: none;
+  padding: 45px 0;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  column-gap: 20px;
+  row-gap: 30px;
+  justify-content: center;
+}
+
+.vacancies__see-all {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  border: none;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-left: 40%;
+  cursor: pointer;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.vacancies__see-all:hover {
+  opacity: 0.8;
+}
