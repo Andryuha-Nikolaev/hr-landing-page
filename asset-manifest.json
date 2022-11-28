@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/hr-landing-page/static/css/main.e2fe3a18.css",
-    "main.js": "/hr-landing-page/static/js/main.02e5c577.js",
+    "main.css": "/hr-landing-page/static/css/main.65f2fddc.css",
+    "main.js": "/hr-landing-page/static/js/main.b0ab8637.js",
     "static/media/YandexSansText-Medium.woff": "/hr-landing-page/static/media/YandexSansText-Medium.6b83f25f39c3f10cc22e.woff",
     "static/media/YandexSansText-Regular.woff": "/hr-landing-page/static/media/YandexSansText-Regular.1c422f2ef1e510532200.woff",
     "static/media/YandexSansText-Medium.woff2": "/hr-landing-page/static/media/YandexSansText-Medium.43fa0def7951e857f96c.woff2",
     "static/media/YandexSansText-Regular.woff2": "/hr-landing-page/static/media/YandexSansText-Regular.fd627cc781ea46efb18f.woff2",
+    "static/media/vk.svg": "/hr-landing-page/static/media/vk.50f5063f8ce8062c3f13d1eaad340cb7.svg",
     "static/media/logo-practicum.svg": "/hr-landing-page/static/media/logo-practicum.af340de1926ff02220a066d2ecda5089.svg",
     "index.html": "/hr-landing-page/index.html",
+    "static/media/tg.svg": "/hr-landing-page/static/media/tg.5b2a02c043308e555ea5b07d657a6171.svg",
     "static/media/arrow-right.svg": "/hr-landing-page/static/media/arrow-right.2b30be4b20ad61c1659fb64af93599dc.svg",
     "static/media/logo-yandex.svg": "/hr-landing-page/static/media/logo-yandex.b25e16f8980dcd6de2c01738617f2d8b.svg",
     "static/media/arrow-black.svg": "/hr-landing-page/static/media/arrow-black.650fa64d3a8497bcfe2c36ba4e13c8db.svg",
     "static/media/close.svg": "/hr-landing-page/static/media/close.a2378eb7a9017cf039ec.svg",
     "static/media/arrow-down.svg": "/hr-landing-page/static/media/arrow-down.ee15821bff74b114f0ac.svg",
-    "main.e2fe3a18.css.map": "/hr-landing-page/static/css/main.e2fe3a18.css.map",
-    "main.02e5c577.js.map": "/hr-landing-page/static/js/main.02e5c577.js.map"
+    "main.65f2fddc.css.map": "/hr-landing-page/static/css/main.65f2fddc.css.map",
+    "main.b0ab8637.js.map": "/hr-landing-page/static/js/main.b0ab8637.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2fe3a18.css",
-    "static/js/main.02e5c577.js"
+    "static/css/main.65f2fddc.css",
+    "static/js/main.b0ab8637.js"
   ]
 }
