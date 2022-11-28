@@ -1,3 +1,23 @@
+.join {
+  padding: 100px 165px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.join__header {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+}
+
+.join__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
 .pop-up {
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -24,4 +44,13 @@
   display: flex;
   visibility: visible;
   opacity: 1;
+}
+
+.join-btn {
+  width: 419px;
+  height: 38px;
+  border-radius: 100px;
+  background-color: #585858;
+  color: white;
+  border: none;
 }
