@@ -1,8 +1,9 @@
 .share {
   display: flex;
   justify-content: space-between;
-  padding: 80px 0 30px;
+  padding: 80px 165px 30px;
   box-sizing: border-box;
+  background-color: #FAFAFA;
 }
 
 .share__wrap {

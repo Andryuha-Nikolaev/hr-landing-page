@@ -1,3 +1,8 @@
+@keyframes showList {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 .vacancies {
   width: calc(100% - 165px * 2);
   padding: 40px;
@@ -25,6 +30,7 @@
   border-bottom: solid 4px #d3d3d3;
   color: #d3d3d3;
   cursor: pointer;
+  transition: color .4s ease-in-out;
 }
 
 .vacancies__btn_active {
@@ -38,11 +44,20 @@
   padding: 45px 0;
   box-sizing: border-box;
   background-color: #f2f2f2;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(3, 330px);
   column-gap: 20px;
   row-gap: 30px;
   justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  animation: showList 1s ease;
+}
+
+.vacancies__list_active {
+  display: grid;
+  visibility: visible;
+  opacity: 1;
 }
 
 .vacancies__see-all {
