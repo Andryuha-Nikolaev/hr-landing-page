@@ -2,7 +2,8 @@ import React from "react";
 import Share from "../Share/Share";
 import Faculty from "../Faculty/Faculty";
 import VacanciesList from '../VacanciesList/VacanciesList';
-import vacancies from '../../assets/vacancies.json'
+import vacancies from '../../assets/vacancies.json';
+import reviews from '../../assets/reviews.json';
 import Tasks from "../Tasks/Tasks";
 
 import Join from '../Join/Join';
@@ -20,8 +21,8 @@ function Main() {
       <h1>тут будет блок4</h1>
        <Expert/>
       <Faculty />
+      <VacanciesList vacancies={vacancies} reviews={reviews}/>
        <Join/>
-      <VacanciesList vacancies={vacancies} />
     </main>
   );
 }
