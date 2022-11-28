@@ -2,7 +2,6 @@
   padding: 63px 165px 100px 165px;
 }
 .tasks__container {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
