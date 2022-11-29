@@ -1,0 +1,53 @@
+.roles {
+  background: #d9d9d9;
+  border-radius: 80px;
+  padding: 70px 165px 93px 165px;
+}
+
+.roles__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: #858585;
+  max-width: 750px;
+  margin-bottom: 64px;
+}
+
+.roles__container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  gap: 50px 30px;
+}
+
+.role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 93px 75px 93px;
+  background: #ffffff;
+  border-radius: 35px;
+  width: 540px;
+  height: 247px;
+}
+
+.role__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.role__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
