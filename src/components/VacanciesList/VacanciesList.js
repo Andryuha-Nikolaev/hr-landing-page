@@ -1,7 +1,7 @@
 import React from "react";
 import "./VacanciesList.css";
 import Vacancy from "../Vacancy/Vacancy";
-import clsx from "clsx";
+import clsx from 'clsx';
 
 function VacanciesList({ vacancies, reviews }) {
   const [toggleState, setToggleState] = React.useState("vacancies");
