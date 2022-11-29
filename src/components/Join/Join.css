@@ -64,6 +64,12 @@
   position: absolute;
   top: 47%;
   left: 0;
+  cursor: pointer;
+  transition: opacity .3s ease-in-out;
+}
+
+.join-btn:hover {
+  opacity: .8;
 }
 
 .join__img_star {
