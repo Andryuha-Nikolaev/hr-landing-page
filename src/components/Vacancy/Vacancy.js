@@ -4,7 +4,7 @@ import arrow from "../../images/arrow-right.svg";
 
 function Vacancy({ vacancy }) {
   return (
-    <li>
+    <li className="vacansy__list-item">
       <a href={vacancy.link} target="blank" className="vacancy">
         <p className="vacancy__text">{vacancy.name}</p>
         <img className="vacancy__arrow" src={arrow} alt="" />

@@ -41,16 +41,20 @@
   font-size: 32px;
   line-height: 38px;
   letter-spacing: 0.02em;
-  transition: opasity .3s ease-in-out;
+  transition: opasity 0.3s ease-in-out;
   margin-top: 60px;
   cursor: pointer;
   border: none;
   background-color: var(--color-button-primary);
   color: var(--color-text-secondary);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .share__btn:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .share__image {

@@ -32,7 +32,7 @@
   line-height: 18px;
   display: flex;
   align-items: center;
-  color: rgba(0, 0, 0, 0.85);
+  color: var(--color-text-fifth);
   cursor: pointer;
   transition: opasity 0.3s ease-in-out;
 }
@@ -48,7 +48,7 @@
   min-width: 193px;
   height: 36px;
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.85);
+  background: var(--color-button-header);
   box-shadow: 0px 1px 4px 1px rgba(36, 36, 36, 0.07);
   border-radius: 120px;
   font-style: normal;

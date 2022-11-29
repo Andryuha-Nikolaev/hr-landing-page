@@ -1,17 +1,16 @@
 .faculty {
-  /* padding: 90px 165px 0; */
   margin: 0 auto;
-  padding-top: 90px;
+  padding-top: 25px;
   max-width: 1110px;
 }
 
 .faculty__title {
   font-style: normal;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 59px;
-  margin-left: 12px;
-  margin-bottom: 35px;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .faculty__content {
@@ -21,31 +20,42 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 552px;
+  min-height: 576px;
+  padding-top: 65px;
 }
 
 .faculty__list {
+  padding: 0 58px;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: 295px 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  min-height: 65px;
 }
 
 .faculty__list-item {
-  background-color: #e2e2e2;
   font-style: normal;
   font-weight: 400;
   font-size: 27px;
   line-height: 32px;
-  width: 100%;
-  min-height: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: opasity 0.3s ease-in-out;
+}
+
+.faculty__list-item:hover {
+  opacity: 0.6;
 }
 
 .faculty__list-item_active {
-  background-color: #f2f2f2;
+  border-bottom: 3px solid var(--color-button-faculty-active);
+  cursor: default;
+}
+
+.faculty__list-item_active:hover {
+  opacity: 1;
 }
 
 .faculty__info {
