@@ -1,8 +1,8 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, EffectFade } from "swiper";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Mousewheel } from "swiper";
 import "./Stories.css";
-import "swiper/css";
+import 'swiper/css';
 
 function Stories() {
 
@@ -12,16 +12,16 @@ function Stories() {
       <Swiper
         direction={"vertical"}
         slidesPerView={2}
-        spaceBetween={30}
+        spaceBetween={110}
         mousewheel={true}
         pagination={{
           clickable: true,
         }}
-        modules={[Mousewheel, EffectFade]}
+        modules={[Mousewheel]}
         className="slider"
       >
         <SwiperSlide className="slide">
-          {({ isActive, isNext }) => (
+          {({ isActive }) => (
             <div className={isActive ? "slide-container slide-container_next" : "slide-container"}>
               <div className={isActive ? "img img_active" : "img"}></div>
               <div className={isActive ? "slide__wrap slide__wrap_active" : 'slide__wrap'}>
@@ -34,7 +34,7 @@ function Stories() {
           )}
         </SwiperSlide>
         <SwiperSlide className="slide">
-        {({ isActive, isNext }) => (
+        {({ isActive }) => (
             <div className={isActive ? "slide-container slide-container_next" : "slide-container"}>
               <div className={isActive ? "img img_active" : "img"}></div>
               <div className={isActive ? "slide__wrap slide__wrap_active" : 'slide__wrap'}>
@@ -47,7 +47,7 @@ function Stories() {
           )}
         </SwiperSlide>
         <SwiperSlide className="slide">
-        {({ isActive, isNext }) => (
+        {({ isActive }) => (
             <div className={isActive ? "slide-container slide-container_next" : "slide-container"}>
               <div className={isActive ? "img img_active" : "img"}></div>
               <div className={isActive ? "slide__wrap slide__wrap_active" : 'slide__wrap'}>
@@ -60,7 +60,7 @@ function Stories() {
           )}
         </SwiperSlide>
         <SwiperSlide className="slide">
-          {({ isActive, isNext }) => (
+          {({ isActive }) => (
             <div className={isActive ? "slide-container slide-container_next" : "slide-container"}>
               <div className={isActive ? "img img_active" : "img"}></div>
               <div className={isActive ? "slide__wrap slide__wrap_active" : 'slide__wrap'}>
@@ -73,7 +73,7 @@ function Stories() {
           )}
         </SwiperSlide>
         <SwiperSlide className="slide">
-        {({ isActive, isNext }) => (
+        {({ isActive }) => (
             <div className={isActive ? "slide-container slide-container_next" : "slide-container"}>
               <div className={isActive ? "img img_active" : "img"}></div>
               <div className={isActive ? "slide__wrap slide__wrap_active" : 'slide__wrap'}>
@@ -86,7 +86,7 @@ function Stories() {
           )}
         </SwiperSlide>
         <SwiperSlide className="slide">
-        {({ isActive, isNext }) => (
+        {({ isActive }) => (
             <div className={isActive ? "slide-container slide-container_next" : "slide-container"}>
               <div className={isActive ? "img img_active" : "img"}></div>
               <div className={isActive ? "slide__wrap slide__wrap_active" : 'slide__wrap'}>
