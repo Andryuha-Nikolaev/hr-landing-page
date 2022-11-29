@@ -1,13 +1,21 @@
 import React from "react";
 import "./VacanciesList.css";
 import Vacancy from "../Vacancy/Vacancy";
+import clsx from 'clsx';
 
 function VacanciesList({ vacancies, reviews }) {
+
   const [toggleState, setToggleState] = React.useState(1);
+  const [openList, setOpenList] =  React.useState(false);
 
   function toggleTab(index) {
     setToggleState(index);
   }
+
+function toggleList() {
+  openList === false ? setOpenList(true) : setOpenList(false)
+}
+
 
   return (
     <section className="vacancies">
@@ -32,25 +40,27 @@ function VacanciesList({ vacancies, reviews }) {
       </button>
 
       <ul
-        className={toggleState === 1
+        className={clsx (toggleState === 1
             ? "vacancies__list vacancies__list_active"
-            : "vacancies__list"
-        }>
+            : "vacancies__list", openList ? "vacancies__list vacancies__list_shown " : "vacancies__list" )
+          }
+
+        >
         {vacancies.map((vacancy) => (
           <Vacancy vacancy={vacancy} key={vacancy.name} />
         ))}
       </ul>
 
-      <ul className={toggleState === 2
+      <ul className={clsx (toggleState === 2
             ? "vacancies__list vacancies__list_active"
-            : "vacancies__list"
+            : "vacancies__list", openList ? "vacancies__list vacancies__list_shown " : "vacancies__list" )
         }>
         {reviews.map((review) => (
           <Vacancy vacancy={review} key={review.name} />
         ))}
       </ul>
 
-      <button type="button" className="vacancies__see-all">
+      <button type="button" className="vacancies__see-all" onClick={() => toggleList()}>
         Посмотреть все
       </button>
     </section>

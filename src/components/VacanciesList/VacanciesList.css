@@ -52,6 +52,13 @@
   visibility: hidden;
   opacity: 0;
   animation: showList 1s ease;
+  height: 450px;
+  overflow: hidden;
+}
+
+.vacancies__list_shown {
+  overflow: visible;
+  min-height: 1300px;
 }
 
 .vacancies__list_active {
