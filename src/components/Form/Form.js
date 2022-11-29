@@ -3,7 +3,7 @@ import './Form.css';
 
 function Form({onClose}) {
   return (
-    <form className="form" required>
+    <form className="form" autoComplete="off" required>
       <legend className="form__title">Заполнить заявку</legend>
       <button className="form__btn_type_close" type="button"  onClick={onClose}></button>
       <input className="form__input form__input_size_l" placeholder="Иванов Владислав Иванович" type="text" name="name" />
