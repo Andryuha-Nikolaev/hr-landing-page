@@ -1,7 +1,8 @@
 .roles {
-  background: #d9d9d9;
   border-radius: 80px;
-  padding: 70px 165px 93px 165px;
+  padding: 70px 0 0 0;
+  margin: 0 auto;
+  max-width: 1110px;
 }
 
 .roles__title {
@@ -10,25 +11,25 @@
   font-size: 60px;
   line-height: 60px;
   letter-spacing: -0.02em;
-  color: #858585;
+  color: var(--color-text-primary);
   max-width: 750px;
   margin-bottom: 64px;
 }
 
 .roles__container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(min-content, max-content));
-  gap: 50px 30px;
+  display: flex;
+  list-style: none;
 }
 
 .role {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  padding: 50px 93px 75px 93px;
-  background: #ffffff;
+  padding: 20px;
+  background: var(--color-block-bg-secondary);
   border-radius: 35px;
-  width: 540px;
+  min-width: 540px;
   height: 247px;
 }
 
@@ -38,7 +39,7 @@
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: var(--color-text-primary);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -50,4 +51,39 @@
   line-height: 23px;
   letter-spacing: -0.02em;
   text-align: center;
+  color: var(--color-text-primary);
+  max-width: 239px;
+  text-align: left;
+}
+
+.role__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.role__img-cats {
+  width: 182px;
+  height: 131px;
+}
+
+.role__img-bricks {
+  width: 154px;
+  height: 134px;
+}
+
+.role__img-bricks {
+  width: 154px;
+  height: 134px;
+}
+
+.role__img-balloons {
+  width: 159px;
+  height: 138px;
+}
+
+.role__img-mountains {
+  width: 246px;
+  height: 91px;
 }

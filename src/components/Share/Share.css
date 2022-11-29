@@ -34,23 +34,22 @@
 }
 
 .share__btn {
-  width: 461px;
-  height: 106px;
+  width: 330px;
+  height: 60px;
   border-radius: 100px;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 38px;
-  letter-spacing: 0.02em;
+  font-size: 24px;
+  line-height: 20px;
   transition: opasity 0.3s ease-in-out;
   margin-top: 60px;
   cursor: pointer;
   border: none;
   background-color: var(--color-button-primary);
   color: var(--color-text-secondary);
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 5;
 }
 
 .share__btn:hover {
@@ -58,10 +57,10 @@
 }
 
 .share__image {
-  width: 662px;
-  height: 457px;
+  width: 1325px;
+  height: 833px;
   z-index: 0;
   position: absolute;
-  top: 123px;
-  right: -172px;
+  top: -29px;
+  left: 213px;
 }

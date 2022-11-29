@@ -1,11 +1,12 @@
 import React from "react";
+import head from "../../images/head.svg";
 import "./Expert.css";
 
 function Expert() {
   return (
     <section className="expert">
       <div className="expert__container">
-        <h2 className="expert__header">Как стать экспертом</h2>
+        <h2 className="expert__header">Как&nbsp;стать&nbsp;экспертом</h2>
         <div className="expert__text">
           <div className="expert__block">
             <div className="expert__circle">1</div>
@@ -31,6 +32,7 @@ function Expert() {
         </div>
         <button className="expert__btn">Посмотреть вакансии</button>
       </div>
+      <img className="expert__img" src={head} alt="голова человека"/>
     </section>
   );
 }
