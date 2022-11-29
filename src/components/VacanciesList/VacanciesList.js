@@ -1,7 +1,7 @@
 import React from "react";
 import "./VacanciesList.css";
 import Vacancy from "../Vacancy/Vacancy";
-import clsx from 'clsx';
+import clsx from "clsx";
 
 function VacanciesList({ vacancies, reviews }) {
   const [toggleState, setToggleState] = React.useState("vacancies");
@@ -9,7 +9,9 @@ function VacanciesList({ vacancies, reviews }) {
   const [openReview, setOpenReview] = React.useState(false);
 
   function toggleTab() {
-    toggleState === "vacancies" ? setToggleState("reviews") : setToggleState("vacancies");
+    toggleState === "vacancies"
+      ? setToggleState("reviews")
+      : setToggleState("vacancies");
   }
 
   function toggleList() {
@@ -21,7 +23,7 @@ function VacanciesList({ vacancies, reviews }) {
   }
 
   return (
-    <section className="vacancies">
+    <section className="vacancies" id="vacansy">
       <h2 className="vacancies__title">Вакансии</h2>
       <button
         className={
