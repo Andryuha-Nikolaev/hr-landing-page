@@ -35,7 +35,7 @@ function VacanciesList({ vacancies, reviews }) {
       </button>
       <button
         className={
-          toggleState === 2
+          toggleState === "reviews"
             ? "vacancies__btn vacancies__btn_active"
             : "vacancies__btn "
         }
