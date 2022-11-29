@@ -7,6 +7,7 @@ import facultyList from "../../assets/facultyList.json";
 import facultyInfo from "../../assets/facultyInfo.json";
 import reviews from '../../assets/reviews.json';
 import Tasks from "../Tasks/Tasks";
+import Stories from "../Stories/Stories";
 
 import Join from "../Join/Join";
 
@@ -20,6 +21,7 @@ function Main() {
       <Expert/>
       <Faculty facultyList={facultyList} facultyInfo={facultyInfo} />
       <VacanciesList vacancies={vacancies} reviews={reviews}/>
+      <Stories/>
       <Join/>
     </main>
   );
