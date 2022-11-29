@@ -22,7 +22,7 @@ function Stories() {
       >
         <SwiperSlide className="slide">
           {({ isActive, isNext }) => (
-            <div className={isNext ? "slide-container slide-container_next" : "slide-container"}>
+            <div className={isActive ? "slide-container slide-container_next" : "slide-container"}>
               <div className={isActive ? "img img_active" : "img"}></div>
               <div className={isActive ? "slide__wrap slide__wrap_active" : 'slide__wrap'}>
                 <h4 className="slide__name">Имя Фамилия</h4>
@@ -35,7 +35,7 @@ function Stories() {
         </SwiperSlide>
         <SwiperSlide className="slide">
         {({ isActive, isNext }) => (
-            <div className={isNext ? "slide-container slide-container_next" : "slide-container"}>
+            <div className={isActive ? "slide-container slide-container_next" : "slide-container"}>
               <div className={isActive ? "img img_active" : "img"}></div>
               <div className={isActive ? "slide__wrap slide__wrap_active" : 'slide__wrap'}>
                 <h4 className="slide__name">Имя Фамилия</h4>
@@ -48,7 +48,7 @@ function Stories() {
         </SwiperSlide>
         <SwiperSlide className="slide">
         {({ isActive, isNext }) => (
-            <div className={isNext ? "slide-container slide-container_next" : "slide-container"}>
+            <div className={isActive ? "slide-container slide-container_next" : "slide-container"}>
               <div className={isActive ? "img img_active" : "img"}></div>
               <div className={isActive ? "slide__wrap slide__wrap_active" : 'slide__wrap'}>
                 <h4 className="slide__name">Имя Фамилия</h4>
@@ -61,7 +61,7 @@ function Stories() {
         </SwiperSlide>
         <SwiperSlide className="slide">
           {({ isActive, isNext }) => (
-            <div className={isNext ? "slide-container slide-container_next" : "slide-container"}>
+            <div className={isActive ? "slide-container slide-container_next" : "slide-container"}>
               <div className={isActive ? "img img_active" : "img"}></div>
               <div className={isActive ? "slide__wrap slide__wrap_active" : 'slide__wrap'}>
                 <h4 className="slide__name">Имя Фамилия</h4>
@@ -74,7 +74,7 @@ function Stories() {
         </SwiperSlide>
         <SwiperSlide className="slide">
         {({ isActive, isNext }) => (
-            <div className={isNext ? "slide-container slide-container_next" : "slide-container"}>
+            <div className={isActive ? "slide-container slide-container_next" : "slide-container"}>
               <div className={isActive ? "img img_active" : "img"}></div>
               <div className={isActive ? "slide__wrap slide__wrap_active" : 'slide__wrap'}>
                 <h4 className="slide__name">Имя Фамилия</h4>
@@ -87,7 +87,7 @@ function Stories() {
         </SwiperSlide>
         <SwiperSlide className="slide">
         {({ isActive, isNext }) => (
-            <div className={isNext ? "slide-container slide-container_next" : "slide-container"}>
+            <div className={isActive ? "slide-container slide-container_next" : "slide-container"}>
               <div className={isActive ? "img img_active" : "img"}></div>
               <div className={isActive ? "slide__wrap slide__wrap_active" : 'slide__wrap'}>
                 <h4 className="slide__name">Имя Фамилия</h4>
