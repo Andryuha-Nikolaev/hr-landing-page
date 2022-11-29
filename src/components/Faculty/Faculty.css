@@ -1,5 +1,8 @@
 .faculty {
-  padding: 90px 165px 0;
+  /* padding: 90px 165px 0; */
+  margin: 0 auto;
+  padding-top: 90px;
+  max-width: 1110px;
 }
 
 .faculty__title {
@@ -13,7 +16,6 @@
 
 .faculty__content {
   background-color: #f2f2f2;
-
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   overflow: hidden;
