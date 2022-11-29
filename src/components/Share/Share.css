@@ -46,6 +46,9 @@
   border: none;
   background-color: var(--color-button-primary);
   color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 5;
 }
 
