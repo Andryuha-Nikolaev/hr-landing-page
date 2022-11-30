@@ -1,7 +1,7 @@
 .expert {
   display: flex;
   justify-content: flex-start;
-  padding:112px 0 72px;
+  padding: 112px 0 72px;
   margin: 0 auto;
   max-width: 1110px;
   align-items: center;
@@ -50,10 +50,9 @@
   justify-content: center;
 }
 
-
 .expert__circle {
   border-radius: 50%;
-  background-color: var( --color-text-secondary);
+  background-color: var(--color-text-secondary);
   width: 40px;
   height: 40px;
   display: flex;
@@ -65,7 +64,7 @@
   content: "";
   display: block;
   position: absolute;
-  border-right: 3px solid var( --color-text-secondary);
+  border-right: 3px solid var(--color-text-secondary);
   width: 0;
   height: 73px;
   top: 41px;
@@ -75,13 +74,12 @@
   content: "";
   display: block;
   position: absolute;
-  border-right: 3px solid var( --color-text-secondary);
+  border-right: 3px solid var(--color-text-secondary);
   width: 0;
   height: 73px;
   top: 42px;
   left: 19px;
 }
-
 
 .expert__block {
   display: flex;
@@ -109,6 +107,9 @@
   transition: opacity 0.4s ease-in-out;
   cursor: pointer;
   margin-left: 24%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .expert__btn:hover {

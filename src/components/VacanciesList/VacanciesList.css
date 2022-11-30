@@ -37,6 +37,15 @@
   transition: color 0.4s ease-in-out;
   text-align: left;
   background-color: transparent;
+  transition: opasity 0.3s ease-in-out;
+}
+
+.vacancies__btn:hover {
+  opacity: 0.6;
+}
+
+.vacancies__btn_active:hover {
+  opacity: 1;
 }
 
 .vacancies__btn_active {

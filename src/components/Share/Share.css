@@ -1,11 +1,16 @@
 .share {
+  position: relative;
+  min-height: 833px;
+  overflow: hidden;
+}
+
+.share__container {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 80px 0 157px;
   max-width: 1110px;
   box-sizing: border-box;
-  position: relative;
 }
 
 .share__wrap {
@@ -61,6 +66,7 @@
   height: 833px;
   z-index: 0;
   position: absolute;
-  top: -29px;
-  left: 213px;
+  top: 0px;
+  /* left: 387px; */
+  right: -263px;
 }
