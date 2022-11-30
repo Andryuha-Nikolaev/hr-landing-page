@@ -20,9 +20,9 @@ function Main() {
       <Roles />
       <Expert />
       <Faculty facultyList={facultyList} facultyInfo={facultyInfo} />
-      <VacanciesList vacancies={vacancies} reviews={reviews}/>
-      <Stories/>
-      <Join/>
+      <VacanciesList vacancies={vacancies} reviews={reviews} />
+      <Stories />
+      <Join />
     </main>
   );
 }

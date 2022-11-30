@@ -1,13 +1,16 @@
 .header {
-  /* padding: 20px 165px; */
-  padding-top: 20px;
   margin: 0 auto;
   max-width: 1110px;
+  min-height: 77px;
   display: flex;
   align-items: center;
-  position: relative;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 99;
+  background-color: var(--main-bg-color);
+  box-shadow: 0px 1px 10px #f8f8f8;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .header__logo-container {

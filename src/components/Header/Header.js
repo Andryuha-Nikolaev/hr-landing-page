@@ -28,14 +28,6 @@ function Header() {
       <div className="header__button-container">
         <nav className="header__nav">
           <Link
-            to="about-us"
-            className="header__nav-link"
-            smooth={true}
-            duration={600}
-          >
-            О нас
-          </Link>
-          <Link
             to="vacansy"
             className="header__nav-link"
             smooth={true}
