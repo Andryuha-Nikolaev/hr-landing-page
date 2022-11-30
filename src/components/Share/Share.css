@@ -64,3 +64,17 @@
   top: -29px;
   left: 213px;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .share__image {
+   display: none;
+  }
+
+  .share__header, .share__header_type_color {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+
+}

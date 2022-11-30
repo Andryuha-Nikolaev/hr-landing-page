@@ -1,15 +1,26 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel } from "swiper";
+import { Mousewheel, Pagination } from "swiper";
 import {
   SlideNextButton,
   SlidePrevButton,
 } from "../../utils/sliderButtons";
 import "./Stories.css";
 import "swiper/css";
+import "swiper/css/pagination";
 import images from "../../utils/constants";
 
 function Stories() {
+
+  // еще есть вот такая функция отрисовки, но я не могу ее задействовать
+
+  // const pagination = {
+  //   clickable: true,
+  //   renderBullet: function (index, className) {
+  //     return '<span class="' + className + '">' + (index + 1) + "</span>";
+  //   },
+  // };
+
   return (
     <section className="stories">
       <h2 className="stories__header">Истории ребят из нашей команды</h2>
@@ -20,9 +31,11 @@ function Stories() {
           spaceBetween={30}
           mousewheel={true}
           pagination={{
-            clickable: true,
-          }}
-          modules={[Mousewheel]}
+            type: 'custom',
+            bulletClass:  ".slider__pag",
+            bulletActiveClass: ".slider__pag_active"
+         }}
+          modules={[Mousewheel, Pagination]}
           className="slider"
         >
           <SlidePrevButton />
