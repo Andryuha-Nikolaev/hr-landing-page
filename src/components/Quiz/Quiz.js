@@ -4,9 +4,19 @@ import "./Quiz.css";
 
 function Quiz({ quizQuestions }) {
   const [questionState, setQuestionState] = useState(0);
+  const [reviewerPoints, setReviewerPoints] = useState(0);
+  const [mentorPoints, setMentorPoints] = useState(0);
 
   function nextQuestion() {
     setQuestionState(questionState + 1);
+  }
+
+  function plus() {
+    setReviewerPoints(reviewerPoints + 1);
+  }
+
+  function nextQuestion() {
+    setMentorPoints(mentorPoints + 1);
   }
 
   const hanleSubmitForm = (e) => {
