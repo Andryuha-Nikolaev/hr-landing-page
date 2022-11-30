@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "../Form/Form";
-import images from "../utils/constants";
+import images from "../../utils/constants";
 import './Join.css';
 
 function Join() {
