@@ -100,7 +100,7 @@
 }
 
 .form__btn_type_submit {
-  width:182px;
+  width: 182px;
   height: 59px;
   border-radius: 100px;
   background-color: var(--color-button-secondary);
@@ -132,7 +132,7 @@
   display: block;
   position: relative;
   padding-left: 45px;
-  margin:0 0 12px 0;
+  margin: 0 0 12px 0;
 }
 
 .form__checkbox-wrap .form__checkbox {
@@ -161,7 +161,7 @@
 }
 
 .form__checkbox:hover ~ .form__checkbox-style {
-  background-color: var( --color-block-bg-secondary)
+  background-color: var(--color-block-bg-secondary);
 }
 
 .form__checkbox-wrap .form__checkbox:checked ~ .form__checkbox-style {
