@@ -1,13 +1,7 @@
-import cats from "../../images/cats.svg";
-import bricks from "../../images/bricks.svg";
-import balloons from "../../images/balloons.svg";
-import mountains from "../../images/mountains.svg";
+import cloud from "../../images/cloud.svg";
 
 const images = {
-  cats,
-  bricks,
-  balloons,
-  mountains,
+  cloud
 };
 
 export default images;
