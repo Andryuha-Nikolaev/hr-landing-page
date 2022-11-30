@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Share from "../Share/Share";
 import Faculty from "../Faculty/Faculty";
 import VacanciesList from "../VacanciesList/VacanciesList";
@@ -14,16 +13,15 @@ import Stories from "../Stories/Stories";
 import Quiz from "../Quiz/Quiz";
 import quizQuestions from "../../assets/quizQuestions.json";
 
-function Main() {
-  const [quizOpen, setquizOpen] = useState(false);
-
-  function openQuiz() {
-    setquizOpen(true);
-  }
+function Main({ quizOpen, handleOverlayClick }) {
   return (
     <main>
       <Share />
-      <Quiz quizQuestions={quizQuestions} />
+      <Quiz
+        quizQuestions={quizQuestions}
+        quizOpen={quizOpen}
+        handleOverlayClick={handleOverlayClick}
+      />
       <Tasks />
       <Roles />
       <Expert />

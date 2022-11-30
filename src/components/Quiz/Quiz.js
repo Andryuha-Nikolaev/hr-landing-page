@@ -2,9 +2,8 @@ import { useState } from "react";
 import Answer from "../Answer/Answer";
 import "./Quiz.css";
 
-function Quiz({ quizQuestions, openQuiz }) {
+function Quiz({ quizQuestions, quizOpen, handleOverlayClick }) {
   const [questionState, setQuestionState] = useState(0);
-
   const [reviewerPoints, setReviewerPoints] = useState(true);
   const [mentorPoints, setMentorPoints] = useState(false);
   const [isQuizStarted, setisQuizStarted] = useState(false);
@@ -16,7 +15,6 @@ function Quiz({ quizQuestions, openQuiz }) {
 
   function nextQuestion() {
     if (questionState > quizQuestions.length - 2) {
-      console.log(1234);
       setisQuizFinished(true);
     } else {
       setQuestionState(questionState + 1);
@@ -37,8 +35,8 @@ function Quiz({ quizQuestions, openQuiz }) {
   };
 
   return (
-    <div className={` ${openQuiz && "overlay"}`}>
-      {!isQuizStarted && openQuiz && (
+    <div className={` ${quizOpen && "overlay"}`} onClick={handleOverlayClick}>
+      {!isQuizStarted && quizOpen && (
         <section className="quiz">
           <h2 className="quiz__title">Определим какая вакансия для вас</h2>
           <p className="quiz__subtitle">
