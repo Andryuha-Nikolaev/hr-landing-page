@@ -18,11 +18,12 @@
   background-image: url(../../images/close.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: white;
+  background-color: transparent;
   border: none;
   position: absolute;
   right: 25px;
   top: 20px;
+  cursor: pointer;
 }
 
 .form__wrap {
@@ -37,6 +38,7 @@
   font-size: 18px;
   line-height: 21px;
   margin-left: 10px;
+  max-width: 527px;
 }
 
 .form__telegram {
@@ -99,17 +101,17 @@
 }
 
 .form__btn_type_submit {
-  width: 242px;
-  height: 78px;
+  width: 182px;
+  height: 59px;
   border-radius: 100px;
-  background-color: #5e5e5e;
+  background-color: var(--color-button-secondary);
   border: none;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
-  color: white;
+  color: var(--color-text-secondary);
   font-weight: 500;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .form__btn_type_submit:hover {
@@ -130,9 +132,8 @@
 .form__checkbox-wrap {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
+  padding-left: 45px;
+  margin: 0 0 12px 0;
 }
 
 .form__checkbox-wrap .form__checkbox {
@@ -145,33 +146,39 @@
   height: 25px;
 }
 
+.form__checkbox {
+  cursor: pointer;
+}
+
 .form__checkbox-style {
   position: absolute;
   top: 0;
   left: 0;
-  width: 25px;
-  height: 25px;
-  background-color: white;
-  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  background-color: var(--main-bg-color);
+  border: 3px solid var(--color-button-secondary);
   border-radius: 5px;
 }
 
-.form__checkbox-wrap:hover .form__checkbox ~ .form__checkbox-style {
-  background-color: #ccc;
+.form__checkbox:hover ~ .form__checkbox-style {
+  background-color: var(--color-block-bg-secondary);
 }
 
 .form__checkbox-wrap .form__checkbox:checked ~ .form__checkbox-style {
-  background-color: #5e5e5e;
+  background-color: var(--main-bg-color);
 }
 
 .form__checkbox-style:after {
   content: "";
   position: absolute;
   display: none;
+  cursor: pointer;
 }
 
 .form__checkbox-wrap .form__checkbox:checked ~ .form__checkbox-style:after {
   display: block;
+  cursor: pointer;
 }
 
 .form__checkbox-wrap .form__checkbox-style:after {
@@ -179,13 +186,13 @@
   top: 4px;
   width: 8px;
   height: 12px;
-  border: solid white;
+  border: solid var(--color-text-primary);
   border-width: 0 4px 4px 0;
   transform: rotate(45deg);
 }
 
 .form__link {
-  color: black;
+  color: var(--color-text-primary);
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;

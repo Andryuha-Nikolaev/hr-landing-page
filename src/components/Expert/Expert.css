@@ -1,19 +1,24 @@
 .expert {
   display: flex;
-  justify-content: center;
-  padding: 97px 50px;
+  justify-content: flex-start;
+  padding: 112px 0 72px;
+  margin: 0 auto;
+  max-width: 1110px;
+  align-items: center;
+  position: relative;
 }
 
 .expert__container {
   width: 730px;
   height: 730px;
   border-radius: 35px;
-  background-color: #cccccc;
-  padding: 70px 65px 79px;
+  background-color: var(--color-block-bg-primary);
+  padding: 70px 64px 74px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .expert__header {
@@ -37,7 +42,17 @@
 
 .expert__circle {
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--main-bg-color);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expert__circle {
+  border-radius: 50%;
+  background-color: var(--color-text-secondary);
   width: 40px;
   height: 40px;
   display: flex;
@@ -49,7 +64,7 @@
   content: "";
   display: block;
   position: absolute;
-  border-right: 1px solid #a8a8a8;
+  border-right: 3px solid var(--color-text-secondary);
   width: 0;
   height: 73px;
   top: 41px;
@@ -59,7 +74,7 @@
   content: "";
   display: block;
   position: absolute;
-  border-right: 1px solid #a8a8a8;
+  border-right: 3px solid var(--color-text-secondary);
   width: 0;
   height: 73px;
   top: 42px;
@@ -75,6 +90,8 @@
 
 .expert__wrap {
   width: 542px;
+  padding-left: 5px;
+  box-sizing: border-box;
 }
 
 .expert__btn {
@@ -82,16 +99,26 @@
   height: 65px;
   border-radius: 100px;
   border: none;
-  background-color: #070602;
-  color: white;
+  background-color: var(--color-button-secondary);
+  color: var(--color-text-secondary);
   font-weight: 500;
   font-size: 21px;
   line-height: 25px;
   transition: opacity 0.4s ease-in-out;
   cursor: pointer;
   margin-left: 24%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .expert__btn:hover {
   opacity: 0.8;
+}
+
+.expert__img {
+  position: absolute;
+  top: 155px;
+  right: -170px;
+  z-index: 5;
 }

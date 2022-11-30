@@ -3,7 +3,7 @@ import "./Tasks.css";
 
 function Tasks() {
   return (
-    <section className="tasks">
+    <section className="tasks" id="about-us">
       <div className="tasks__container">
         <div className="task">
           <h3 className="task__title">Задачи ревьюера</h3>

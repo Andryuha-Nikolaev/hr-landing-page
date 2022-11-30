@@ -1,97 +1,88 @@
 import React from "react";
 import "./Footer.css";
 import logoVk from "../../images/vk.svg";
-import logoTg from "../../images/tg.svg";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contacts">
       <div className="footer__container">
         <div className="footer__content">
           <div className="footer__contacts">
             <div>
               <h2 className="footer__tel">8-800-700-93-29</h2>
               <span className="footer__span">Звонок по России бесплатный</span>
-            </div>
-            <div className="footer__link-container">
-              <a
-                href="https://practicum.yandex.ru"
-                className="footer__link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Помощь
-              </a>
-              <a
-                href="https://practicum.yandex.ru"
-                className="footer__link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Правовая информация
-              </a>
-              <a
-                href="https://practicum.yandex.ru"
-                className="footer__link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Вакансии
-              </a>
-              <a
-                href="https://practicum.yandex.ru"
-                className="footer__link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Для работодателей
-              </a>
-              <a
-                href="https://practicum.yandex.ru"
-                className="footer__link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Лицензия
-              </a>
-              <a
-                href="https://practicum.yandex.ru"
-                className="footer__link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Отзывы
-              </a>
-            </div>
-            <div>
-              <div className="footer__social-media">
+              <div className="footer__link-container">
                 <a
-                  href="https://practicum.yandex.ru"
+                  href="https://yandex.ru/support/praktikum/feedback.html"
                   className="footer__link"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Журнал
+                  Помощь
                 </a>
                 <a
-                  href="https://practicum.yandex.ru"
+                  href="https://yandex.ru/legal/practicum_termsofuse/"
+                  className="footer__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Правовая информация
+                </a>
+                <a
+                  href="https://practicum.yandex.ru/job"
+                  className="footer__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Вакансии
+                </a>
+                <a
+                  href="https://practicum.yandex.ru/employment/"
+                  className="footer__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Для работодателей
+                </a>
+                <a
+                  href="https://code.s3.yandex.net/License%20YSDA.pdf"
+                  className="footer__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Лицензия
+                </a>
+                <a
+                  href="https://practicum.yandex.ru/reviews"
+                  className="footer__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Отзывы
+                </a>
+              </div>
+              <div className="footer__social-media">
+                <a
+                  href="https://vk.com/yandex.practicum"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img src={logoVk} alt="логотип ссылки на вконтакте" />
                 </a>
                 <a
-                  href="https://practicum.yandex.ru"
+                  href="https://thecode.media/"
+                  className="footer__link"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={logoTg} alt="логотип ссылки на телеграм" />
+                  Журнал
                 </a>
               </div>
-              <p className="footer__author">
-                &copy;2022 АНО ДПО «ШАД», ООО «Яндекс»
-              </p>
             </div>
+
+            <p className="footer__author">
+              &copy;2022 АНО ДПО «ШАД», ООО «Яндекс»
+            </p>
           </div>
           <div className="footer__info">
             <p className="footer__text">

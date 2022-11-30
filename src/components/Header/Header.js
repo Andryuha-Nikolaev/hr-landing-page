@@ -36,22 +36,6 @@ function Header({ openQuiz }) {
             Вакансии
           </Link>
           <Link
-            to="about-us"
-            className="header__nav-link"
-            smooth={true}
-            duration={600}
-          >
-            О нас
-          </Link>
-          <Link
-            to="faq"
-            className="header__nav-link"
-            smooth={true}
-            duration={600}
-          >
-            FAQ
-          </Link>
-          <Link
             to="contacts"
             className="header__nav-link"
             smooth={true}

@@ -1,8 +1,6 @@
-
 .vacancy {
-  width: 330px;
   height: 130px;
-  background-color: #545454;
+  background-color: var(--color-block-bg-tertiary);
   border-radius: 20px;
   cursor: pointer;
   transition: opacity 0.4s ease-in-out;
@@ -21,7 +19,7 @@
   font-weight: 400;
   font-size: 26px;
   line-height: 30px;
-  color: white;
+  color: var(--color-text-secondary);
 }
 
 .vacancy__arrow {
@@ -34,7 +32,10 @@
   font-weight: 500;
   font-size: 25px;
   line-height: 29px;
-  color: #2f2f2f;
-  padding-top: 15px;
+  padding: 15px 0 14px 10px;
+}
 
+.vacansy__list-item {
+  border-radius: 20px;
+  background-color: var(--color-block-bg-primary);
 }

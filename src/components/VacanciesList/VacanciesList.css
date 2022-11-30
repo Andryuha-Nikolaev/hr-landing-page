@@ -1,82 +1,88 @@
-@keyframes showList {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+.vacancies {
+  background-color: var(--color-block-bg-quaternary);
+  padding-bottom: 60px;
 }
 
-.vacancies {
-  width: calc(100% - 165px * 2);
-  padding: 40px;
-  background-color: #f2f2f2;
+.vacancies__container {
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 0 40px;
+  background-color: var(--main-bg-color);
   margin: 0 auto;
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
 }
 
 .vacancies__title {
+  font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 42px;
-  background-color: #f2f2f2;
-  margin-bottom: 25px;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 35px;
 }
 
 .vacancies__btn {
-  width: 280px;
-  height: 62px;
+  width: 270px;
+  font-style: normal;
+  letter-spacing: 0.02em;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+  margin: 10px 0;
+  padding-bottom: 10px;
   border: none;
-  border-bottom: solid 4px #d3d3d3;
-  color: #d3d3d3;
+  border-bottom: solid 4px var(--color-button-vacansy-inactive);
+  color: var(--color-text-quaternary);
   cursor: pointer;
-  transition: color .4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+  text-align: left;
+  background-color: transparent;
+  transition: opasity 0.3s ease-in-out;
+}
+
+.vacancies__btn:hover {
+  opacity: 0.6;
+}
+
+.vacancies__btn_active:hover {
+  opacity: 1;
 }
 
 .vacancies__btn_active {
-  border-bottom: solid 4px #535353;
-  color: #535353;
+  border-bottom: solid 4px var(--color-button-vacansy-active);
+  color: var(--color-text-tertiary);
   cursor: default;
 }
 
 .vacancies__list {
   list-style: none;
-  padding: 45px 0;
+  padding-top: 35px;
+  padding-bottom: 24px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
-  display: none;
-  grid-template-columns: repeat(3, 330px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 20px;
   row-gap: 30px;
   justify-content: center;
-  visibility: hidden;
-  opacity: 0;
-  animation: showList 1s ease;
-  height: 450px;
-  overflow: hidden;
-}
-
-.vacancies__list_shown {
-  overflow: visible;
-  min-height: 1300px;
-}
-
-.vacancies__list_active {
-  display: grid;
-  visibility: visible;
-  opacity: 1;
 }
 
 .vacancies__see-all {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  width: 315px;
+  min-height: 60px;
+  background-color: var(--color-button-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 120px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
   border: none;
-  text-decoration: underline;
-  margin-top: 10px;
-  margin-left: 40%;
+  color: var(--color-text-secondary);
+  margin: 0 auto;
   cursor: pointer;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .vacancies__see-all:hover {
