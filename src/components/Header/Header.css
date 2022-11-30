@@ -1,13 +1,16 @@
 .header {
-  padding: 20px 165px;
+  /* padding: 20px 165px; */
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 1110px;
   display: flex;
   align-items: center;
   position: relative;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .header__logo-container {
-  margin-left: 10px;
   display: flex;
   gap: 5.44px;
   align-items: center;
@@ -15,22 +18,22 @@
 
 .header__button-container {
   display: flex;
-  gap: 32px;
+  gap: 25px;
 }
 
 .header__nav {
   display: flex;
-  gap: 12px;
+  gap: 15px;
 }
 
 .header__nav-link {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   display: flex;
   align-items: center;
-  color: rgba(0, 0, 0, 0.85);
+  color: var(--color-text-fifth);
   cursor: pointer;
   transition: opasity 0.3s ease-in-out;
 }
@@ -43,15 +46,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 173px;
+  min-width: 193px;
   height: 36px;
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.85);
+  background: var(--color-button-header);
   box-shadow: 0px 1px 4px 1px rgba(36, 36, 36, 0.07);
   border-radius: 120px;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   display: flex;
   align-items: center;

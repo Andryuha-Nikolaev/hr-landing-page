@@ -5,7 +5,7 @@ import logoTg from "../../images/tg.svg";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contacts">
       <div className="footer__container">
         <div className="footer__content">
           <div className="footer__contacts">
