@@ -42,7 +42,7 @@
 
 .pop-up__container {
   position: fixed;
-  top: 16%;
+  top: 7%;
 }
 
 .pop-up_opened {
@@ -66,6 +66,7 @@
   left: 0;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
+  z-index: 10;
 }
 
 .join-btn:hover {
