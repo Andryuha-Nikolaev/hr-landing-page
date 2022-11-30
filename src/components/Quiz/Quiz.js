@@ -6,22 +6,26 @@ function Quiz({ quizQuestions }) {
   const [questionState, setQuestionState] = useState(0);
   const [reviewerPoints, setReviewerPoints] = useState(0);
   const [mentorPoints, setMentorPoints] = useState(0);
+  const [value, setValue] = useState(1);
 
   function nextQuestion() {
     setQuestionState(questionState + 1);
   }
 
-  function plus() {
+  function plusReviewerPoints() {
     setReviewerPoints(reviewerPoints + 1);
   }
 
-  function nextQuestion() {
+  function plusMentorPoints() {
     setMentorPoints(mentorPoints + 1);
   }
 
   const hanleSubmitForm = (e) => {
     e.preventDefault();
+    console.log(e);
   };
+
+  function setPoints(e) {}
 
   return (
     <>
@@ -46,7 +50,7 @@ function Quiz({ quizQuestions }) {
         <form className="quiz__answers-container" onSubmit={hanleSubmitForm}>
           <div className="quiz__answers">
             {quizQuestions[questionState].answers.map((answers, index) => (
-              <Answer answers={answers} key={index} />
+              <Answer answers={answers} key={index} setPoints={setPoints} />
             ))}
           </div>
           <button

@@ -2,15 +2,13 @@ import React from "react";
 import "./Answer.css";
 
 function Answer({ answers }) {
-  console.log(answers.number);
-
   return (
     <>
       <input
         type="radio"
         id={`radio${answers.number}`}
         name="radio"
-        value={answers.number}
+        value={answers.value}
         className="quiz__input"
       ></input>
       <label className="quiz__label" htmlFor={`radio${answers.number}`}>
