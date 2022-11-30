@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Faculty.css";
-import arrowBlack from "../../images/arrow-black.svg";
+// import arrowBlack from "../../images/arrow-black.svg";
 import faculty1 from "../../images/faculty1.png";
 
 function Faculty({ facultyList, facultyInfo }) {
@@ -42,7 +42,7 @@ function Faculty({ facultyList, facultyInfo }) {
                 rel="noreferrer"
               >
                 Ознакомиться с курсами
-                <img src={arrowBlack} alt="ссылка на все курсы" />
+                {/* <img src={arrowBlack} alt="ссылка на все курсы" /> */}
               </a>
             </div>
             <img

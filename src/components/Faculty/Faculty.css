@@ -4,7 +4,7 @@
 
 .faculty__container {
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 45px;
   max-width: 1110px;
 }
 
@@ -98,8 +98,9 @@
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
-  color: var(--color-text-primary);
-  text-decoration: none;
+  color: #0f3fcf;
+  /* color: var(--color-text-primary); */
+  /* text-decoration: none; */
   width: max-content;
   height: 44px;
   transition: opasity 0.3s ease-in-out;
