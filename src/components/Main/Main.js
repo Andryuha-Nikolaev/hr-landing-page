@@ -14,6 +14,11 @@ import Quiz from "../Quiz/Quiz";
 import quizQuestions from "../../assets/quizQuestions.json";
 
 function Main() {
+  const [quizOpen, setquizOpen] = useState(false);
+
+  function openQuiz() {
+    setquizOpen(true);
+  }
   return (
     <main>
       <Share />
