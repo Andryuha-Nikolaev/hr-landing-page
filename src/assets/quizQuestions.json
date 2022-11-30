@@ -1,0 +1,67 @@
+[
+  {
+    "number": "1",
+    "question": "Какая область вас интересует?",
+    "answers": [
+      { "number": 1, "answer": "Программирование" },
+      { "number": 2, "answer": "Анализ данных" },
+      { "number": 3, "answer": "Менеджмент" },
+      { "number": 4, "answer": "Маркетинг" },
+      { "number": 5, "answer": "Дизайн" }
+    ]
+  },
+  {
+    "number": "2",
+    "question": "Сколько лет вы работаете суммарно в данной области?",
+    "answers": [
+      { "number": 1, "answer": "Более 2 лет" },
+      { "number": 2, "answer": "Менее 2 лет" },
+      { "number": 3, "answer": "Нет опыта" }
+    ]
+  },
+  {
+    "number": "3",
+    "question": "Вы когда то имели опыт выступления на публику?",
+    "answers": [
+      { "number": 1, "answer": "Да" },
+      { "number": 2, "answer": "Нет" }
+    ]
+  },
+  {
+    "number": "4",
+    "question": "Вопрос 4",
+    "answers": [
+      { "number": 1, "answer": "Ответ 1" },
+      { "number": 2, "answer": "Ответ 2" },
+      { "number": 3, "answer": "Ответ 3" },
+      { "number": 4, "answer": "Ответ 4" }
+    ]
+  },
+  {
+    "number": "5",
+    "question": "Вопрос 5",
+    "answers": [
+      { "number": 1, "answer": "Ответ 1" },
+      { "number": 2, "answer": "Ответ 2" },
+      { "number": 3, "answer": "Ответ 3" },
+      { "number": 4, "answer": "Ответ 4" }
+    ]
+  },
+  {
+    "number": "6",
+    "question": "Вопрос 6",
+    "answers": [
+      { "number": 1, "answer": "Ответ 1" },
+      { "number": 2, "answer": "Ответ 2" }
+    ]
+  },
+  {
+    "number": "7",
+    "question": "Вопрос 7",
+    "answers": [
+      { "number": 1, "answer": "Ответ 1" },
+      { "number": 2, "answer": "Ответ 2" },
+      { "number": 3, "answer": "Ответ 3" }
+    ]
+  }
+]

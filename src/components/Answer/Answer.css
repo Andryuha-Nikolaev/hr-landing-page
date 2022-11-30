@@ -1,0 +1,29 @@
+.quiz__input {
+  display: none;
+}
+
+.quiz__input:hover + label {
+  background-color: #f8f8f8;
+}
+
+.quiz__input:checked + label {
+  background-color: #2559f6;
+  color: #ffffff;
+  border: none;
+}
+
+.quiz__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 0.5px solid #000000;
+  border-radius: 12px;
+  height: 48px;
+  width: fit-content;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}

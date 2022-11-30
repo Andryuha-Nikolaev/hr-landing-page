@@ -10,11 +10,14 @@ import Tasks from "../Tasks/Tasks";
 import Join from "../Join/Join";
 import Expert from "../Expert/Expert";
 import Roles from "../Roles/Roles";
+import Quiz from "../Quiz/Quiz";
+import quizQuestions from "../../assets/quizQuestions.json";
 
 function Main() {
   return (
     <main>
       <Share />
+      <Quiz quizQuestions={quizQuestions} />
       <Tasks />
       <Roles />
       <Expert />
