@@ -1,0 +1,98 @@
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px 30px 30px;
+  width: 920px;
+  border-radius: 32px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.quiz__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  color: rgba(0, 0, 0, 0.85);
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.quiz__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.85);
+}
+.quiz_type_finalcard {
+  gap: 15px;
+}
+
+.quiz__question-container {
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quiz__question {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.quiz__question-number {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.quiz__button {
+  width: fit-content;
+  padding: 15px 40px;
+  background-color: #000000;
+  backdrop-filter: blur(6px);
+  border-radius: 120px;
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 23px;
+}
+
+.quiz__button_type_qustion {
+  margin-top: 8px;
+}
+.quiz__answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.quiz__answers {
+  display: flex;
+  gap: 15px;
+}

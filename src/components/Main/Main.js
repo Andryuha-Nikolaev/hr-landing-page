@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import Share from "../Share/Share";
 import Faculty from "../Faculty/Faculty";
 import VacanciesList from "../VacanciesList/VacanciesList";
@@ -11,11 +11,19 @@ import Join from "../Join/Join";
 import Expert from "../Expert/Expert";
 import Roles from "../Roles/Roles";
 import Stories from "../Stories/Stories";
+import Quiz from "../Quiz/Quiz";
+import quizQuestions from "../../assets/quizQuestions.json";
 
 function Main() {
+  const [quizOpen, setquizOpen] = useState(false);
+
+  function openQuiz() {
+    setquizOpen(true);
+  }
   return (
     <main>
       <Share />
+      <Quiz quizQuestions={quizQuestions} />
       <Tasks />
       <Roles />
       <Expert />
