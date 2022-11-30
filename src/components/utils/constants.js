@@ -5,7 +5,7 @@ import blueArrow from "../../images/blue-arrow.svg";
 import programmer from "../../images/programmer.svg"
 
 const images = {
-  cloud
+  cloud,
   star,
   blueArrow,
   programmer
