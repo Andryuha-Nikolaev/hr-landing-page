@@ -2,7 +2,7 @@ import { useState } from "react";
 import Answer from "../Answer/Answer";
 import "./Quiz.css";
 
-function Quiz({ quizQuestions }) {
+function Quiz({ quizQuestions, openQuiz }) {
   const [questionState, setQuestionState] = useState(0);
 
   const [reviewerPoints, setReviewerPoints] = useState(true);
@@ -36,15 +36,9 @@ function Quiz({ quizQuestions }) {
     console.log(e);
   };
 
-  function handleOverlayClick(e) {
-    if (e.target === e.currentTarget) {
-      setquizOpen(false);
-    }
-  }
-
   return (
-    <div className={` ${quizOpen && "overlay"}`}>
-      {!isQuizStarted && quizOpen && (
+    <div className={` ${openQuiz && "overlay"}`}>
+      {!isQuizStarted && openQuiz && (
         <section className="quiz">
           <h2 className="quiz__title">Определим какая вакансия для вас</h2>
           <p className="quiz__subtitle">

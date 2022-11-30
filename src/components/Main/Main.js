@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import Share from "../Share/Share";
 import Faculty from "../Faculty/Faculty";
 import VacanciesList from "../VacanciesList/VacanciesList";
