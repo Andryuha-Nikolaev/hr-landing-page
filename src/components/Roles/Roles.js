@@ -1,5 +1,5 @@
 import React from "react";
-import images from "../utils/constants";
+import images from "../../utils/constants";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel } from "swiper";
 import "swiper/css";
