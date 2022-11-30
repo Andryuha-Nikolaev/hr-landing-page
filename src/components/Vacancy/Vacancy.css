@@ -37,5 +37,5 @@
 
 .vacansy__list-item {
   border-radius: 20px;
-  background-color: white;
+  background-color: var(--color-block-bg-quaternary);
 }

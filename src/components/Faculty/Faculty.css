@@ -1,4 +1,8 @@
 .faculty {
+  background-color: var(--color-block-bg-quaternary);
+}
+
+.faculty__container {
   margin: 0 auto;
   padding-top: 25px;
   max-width: 1110px;
@@ -14,7 +18,7 @@
 }
 
 .faculty__content {
-  background-color: #f2f2f2;
+  background-color: var(--main-bg-color);
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   overflow: hidden;
@@ -58,13 +62,13 @@
   opacity: 1;
 }
 
-.faculty__info {
-  padding: 78px 100px 20px;
+.faculty__info-container {
+  padding: 60px 60px 80px;
   display: flex;
-  justify-content: space-between;
-  gap: 75px;
-  position: relative;
-  flex: 1 1 auto;
+  /* justify-content: space-between; */
+  gap: 55px;
+  /* position: relative; */
+  /* flex: 1 1 auto; */
 }
 
 .faculty__text {
@@ -72,6 +76,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+  letter-spacing: 0.02em;
   max-width: 380px;
   flex: 1;
 }
@@ -84,58 +89,32 @@
   flex: 1;
 }
 
-.faculty__link {
-  height: 60px;
-  background-color: #ffffff;
-  border-radius: 25px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  transition: opasity 0.3s ease-in-out;
-}
-
-.faculty__link_inactive {
-  display: none;
-}
-
-.faculty__link:hover {
-  opacity: 0.6;
-}
-
-.faculty__link_left {
-  margin-right: auto;
-}
-
-.faculty__link_right {
-  margin-left: auto;
-  text-align: right;
-}
-
 .faculty__link-all {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: 100px;
-  max-width: 115px;
+  margin-top: 43px;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  /* gap: 8px; */
-  color: #000000;
+  letter-spacing: 0.02em;
+  color: var(--color-text-primary);
   text-decoration: none;
+  width: max-content;
   height: 44px;
   transition: opasity 0.3s ease-in-out;
 }
 
 .faculty__link-all:hover {
   opacity: 0.6;
+}
+
+.faculty__image {
+  max-width: 512px;
+  max-height: 316px;
+  /* width: 100%; */
+  /* object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
 }
