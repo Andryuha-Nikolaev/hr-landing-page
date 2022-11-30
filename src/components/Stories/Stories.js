@@ -4,7 +4,7 @@ import { Mousewheel } from "swiper";
 import {
   SlideNextButton,
   SlidePrevButton,
-} from "../../utils/sliderButtons/sliderButtons";
+} from "../../utils/sliderButtons";
 import "./Stories.css";
 import "swiper/css";
 import images from "../../utils/constants";
