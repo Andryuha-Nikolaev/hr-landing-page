@@ -1,25 +1,38 @@
 {
   "files": {
-    "main.css": "/hr-landing-page/static/css/main.65f2fddc.css",
-    "main.js": "/hr-landing-page/static/js/main.b0ab8637.js",
+    "main.css": "/hr-landing-page/static/css/main.21cf66f0.css",
+    "main.js": "/hr-landing-page/static/js/main.f5f2cd0a.js",
+    "static/media/head.svg": "/hr-landing-page/static/media/head.a8dc47d974043093d2bbca6bf59fb09b.svg",
+    "static/media/laptop.svg": "/hr-landing-page/static/media/laptop.1bfd105e1a26a72822a3fff0a6a15c10.svg",
+    "static/media/programmer.svg": "/hr-landing-page/static/media/programmer.6294ebd7e88f13d5513948a3a68d1a95.svg",
+    "static/media/star.svg": "/hr-landing-page/static/media/star.2aab14249f7746b203094cf680612bf3.svg",
+    "static/media/anastasia.svg": "/hr-landing-page/static/media/anastasia.ad71d9897cb4c0ed9333e5902c53566a.svg",
+    "static/media/tolya.svg": "/hr-landing-page/static/media/tolya.e2094c6895114769abe0b7c54b926309.svg",
+    "static/media/zoya.svg": "/hr-landing-page/static/media/zoya.d15bf70ea615bd81330845f7b6b36299.svg",
+    "static/media/kirill.svg": "/hr-landing-page/static/media/kirill.c39e14b32225a3fea3c36f4ac01e228a.svg",
+    "static/media/artem.svg": "/hr-landing-page/static/media/artem.c1df9ba4f2ffc210423c45a8efcaa053.svg",
     "static/media/YandexSansText-Medium.woff": "/hr-landing-page/static/media/YandexSansText-Medium.6b83f25f39c3f10cc22e.woff",
     "static/media/YandexSansText-Regular.woff": "/hr-landing-page/static/media/YandexSansText-Regular.1c422f2ef1e510532200.woff",
     "static/media/YandexSansText-Medium.woff2": "/hr-landing-page/static/media/YandexSansText-Medium.43fa0def7951e857f96c.woff2",
     "static/media/YandexSansText-Regular.woff2": "/hr-landing-page/static/media/YandexSansText-Regular.fd627cc781ea46efb18f.woff2",
     "static/media/vk.svg": "/hr-landing-page/static/media/vk.50f5063f8ce8062c3f13d1eaad340cb7.svg",
     "static/media/logo-practicum.svg": "/hr-landing-page/static/media/logo-practicum.af340de1926ff02220a066d2ecda5089.svg",
+    "static/media/cloud.svg": "/hr-landing-page/static/media/cloud.04b6f736ad3ec3fcdc6e0848a1f408ca.svg",
     "index.html": "/hr-landing-page/index.html",
     "static/media/tg.svg": "/hr-landing-page/static/media/tg.5b2a02c043308e555ea5b07d657a6171.svg",
     "static/media/arrow-right.svg": "/hr-landing-page/static/media/arrow-right.2b30be4b20ad61c1659fb64af93599dc.svg",
     "static/media/logo-yandex.svg": "/hr-landing-page/static/media/logo-yandex.b25e16f8980dcd6de2c01738617f2d8b.svg",
+    "static/media/blue-arrow.svg": "/hr-landing-page/static/media/blue-arrow.fd4e22e88fc71705b46eb8c3da37a3de.svg",
     "static/media/arrow-black.svg": "/hr-landing-page/static/media/arrow-black.650fa64d3a8497bcfe2c36ba4e13c8db.svg",
     "static/media/close.svg": "/hr-landing-page/static/media/close.a2378eb7a9017cf039ec.svg",
+    "static/media/prev.svg": "/hr-landing-page/static/media/prev.e6e1a5afe00a2c423ff1.svg",
+    "static/media/next.svg": "/hr-landing-page/static/media/next.3e0553f1e10286bc808a.svg",
     "static/media/arrow-down.svg": "/hr-landing-page/static/media/arrow-down.ee15821bff74b114f0ac.svg",
-    "main.65f2fddc.css.map": "/hr-landing-page/static/css/main.65f2fddc.css.map",
-    "main.b0ab8637.js.map": "/hr-landing-page/static/js/main.b0ab8637.js.map"
+    "main.21cf66f0.css.map": "/hr-landing-page/static/css/main.21cf66f0.css.map",
+    "main.f5f2cd0a.js.map": "/hr-landing-page/static/js/main.f5f2cd0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.65f2fddc.css",
-    "static/js/main.b0ab8637.js"
+    "static/css/main.21cf66f0.css",
+    "static/js/main.f5f2cd0a.js"
   ]
 }
