@@ -1,22 +1,47 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
+import laptop from "../../images/laptop.svg";
 import "./Share.css";
 
 function Share() {
+  const titleText = [
+    "программировании",
+    "анализе данных",
+    "менеджменте",
+    "маркетинге",
+    "дизайне",
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => setIndex((index) => index + 1), 1500);
+    return () => clearTimeout(intervalId);
+  }, []);
+
   return (
     <section className="share">
-      <div className="share__wrap">
-        <h1 className="share__header">
-          Делись своим опытом в программировании
-          <br />
-          <span className="share__header_type_color">
-            станьте наставником или ревьюером
-          </span>
-        </h1>
-        <button className="share__btn" type="button">
-          Посмотреть вакансии
-        </button>
+      <div className="share__container">
+        <div className="share__wrap">
+          <h1 className="share__header_type_color" id="changeText">
+            Делись своим опытом в&nbsp;
+            {titleText[index % titleText.length]}
+            <br />
+            <span className="share__header">
+              станьте наставником или ревьюером
+            </span>
+          </h1>
+          <Link
+            to="vacansy"
+            className="share__btn"
+            smooth={true}
+            duration={600}
+          >
+            Посмотреть вакансии
+          </Link>
+        </div>
+        <img className="share__image" src={laptop} alt="ноутбук" />
       </div>
-      <img className="share__image" />
     </section>
   );
 }

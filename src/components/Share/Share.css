@@ -1,9 +1,16 @@
 .share {
+  position: relative;
+  min-height: 833px;
+  overflow: hidden;
+}
+
+.share__container {
   display: flex;
   justify-content: space-between;
-  padding: 80px 165px 30px;
+  margin: 0 auto;
+  padding: 80px 0 157px;
+  max-width: 1110px;
   box-sizing: border-box;
-  background-color: #FAFAFA;
 }
 
 .share__wrap {
@@ -18,32 +25,48 @@
   font-size: 60px;
   line-height: 60px;
   letter-spacing: -0.02em;
-  color: #858585;
+  color: var(--color-text-primary);
+  z-index: 5;
 }
 
 .share__header_type_color {
-  color: #262626;
+  color: var(--color-text-title);
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  z-index: 5;
 }
 
 .share__btn {
-  width: 461px;
-  height: 106px;
+  width: 330px;
+  height: 60px;
   border-radius: 100px;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 38px;
-  letter-spacing: 0.02em;
-  transition: opasity .3s ease-in-out;
+  font-size: 24px;
+  line-height: 20px;
+  transition: opasity 0.3s ease-in-out;
+  margin-top: 60px;
   cursor: pointer;
   border: none;
+  background-color: var(--color-button-primary);
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
 }
 
 .share__btn:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .share__image {
-  width: 380px;
-  height: 593px;
-  background-color: gray;
+  width: 1325px;
+  height: 833px;
+  z-index: 0;
+  position: absolute;
+  top: 0px;
+  /* left: 387px; */
+  right: -263px;
 }

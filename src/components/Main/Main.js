@@ -10,6 +10,7 @@ import Tasks from "../Tasks/Tasks";
 import Join from "../Join/Join";
 import Expert from "../Expert/Expert";
 import Roles from "../Roles/Roles";
+import Stories from "../Stories/Stories";
 import Quiz from "../Quiz/Quiz";
 import quizQuestions from "../../assets/quizQuestions.json";
 
@@ -28,6 +29,7 @@ function Main() {
       <Expert />
       <Faculty facultyList={facultyList} facultyInfo={facultyInfo} />
       <VacanciesList vacancies={vacancies} reviews={reviews} />
+      <Stories />
       <Join />
     </main>
   );
