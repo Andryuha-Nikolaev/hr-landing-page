@@ -1,7 +1,7 @@
 .expert {
   display: flex;
   justify-content: flex-start;
-  padding: 72px 0;
+  padding:112px 0 72px;
   margin: 0 auto;
   max-width: 1110px;
   align-items: center;
@@ -42,13 +42,46 @@
 
 .expert__circle {
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--main-bg-color);
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
+.expert__circle {
+  border-radius: 50%;
+  background-color: var( --color-text-secondary);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expert__block:first-of-type::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-right: 3px solid var( --color-text-secondary);
+  width: 0;
+  height: 73px;
+  top: 41px;
+  left: 19px;
+}
+.expert__block:nth-of-type(2)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-right: 3px solid var( --color-text-secondary);
+  width: 0;
+  height: 73px;
+  top: 42px;
+  left: 19px;
+}
+
 
 .expert__block {
   display: flex;

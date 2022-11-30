@@ -15,7 +15,7 @@ function Roles() {
         spaceBetween={25}
         mousewheel={true}
         modules={[Mousewheel]}
-        className="slider"
+        className="roles__slider"
       >
         <ul className="roles__container">
           <SwiperSlide>
