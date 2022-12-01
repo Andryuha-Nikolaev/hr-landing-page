@@ -4,7 +4,7 @@ import "./Header.css";
 import logoYandex from "../../images/logo-yandex.svg";
 import logoPracticum from "../../images/logo-practicum.svg";
 
-function Header() {
+function Header({ openQuiz }) {
   return (
     <header className="header">
       <div className="header__logo-container">
@@ -28,14 +28,6 @@ function Header() {
       <div className="header__button-container">
         <nav className="header__nav">
           <Link
-            to="about-us"
-            className="header__nav-link"
-            smooth={true}
-            duration={600}
-          >
-            О нас
-          </Link>
-          <Link
             to="vacansy"
             className="header__nav-link"
             smooth={true}
@@ -52,7 +44,7 @@ function Header() {
             Контакты
           </Link>
         </nav>
-        <button className="header__button" type="button">
+        <button className="header__button" type="button" onClick={openQuiz}>
           Подобрать вакансию
         </button>
       </div>

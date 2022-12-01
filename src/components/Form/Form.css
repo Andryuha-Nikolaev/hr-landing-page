@@ -23,6 +23,7 @@
   position: absolute;
   right: 25px;
   top: 20px;
+  cursor: pointer;
 }
 
 .form__wrap {
@@ -121,6 +122,7 @@
 }
 
 .form__btn_type_submit {
+
   width:172px;
   height: 61px;
   border-radius: 100px;
@@ -157,7 +159,7 @@
   display: block;
   position: relative;
   padding-left: 45px;
-  margin:0 0 12px 0;
+  margin: 0 0 12px 0;
 }
 
 .form__checkbox-wrap .form__checkbox {
@@ -186,7 +188,7 @@
 }
 
 .form__checkbox:hover ~ .form__checkbox-style {
-  background-color: var( --color-block-bg-secondary)
+  background-color: var(--color-block-bg-secondary);
 }
 
 .form__checkbox-wrap .form__checkbox:checked ~ .form__checkbox-style {

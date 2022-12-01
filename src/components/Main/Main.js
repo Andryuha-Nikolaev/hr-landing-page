@@ -1,4 +1,3 @@
-import React from "react";
 import Share from "../Share/Share";
 import Faculty from "../Faculty/Faculty";
 import VacanciesList from "../VacanciesList/VacanciesList";
@@ -11,18 +10,27 @@ import Join from "../Join/Join";
 import Expert from "../Expert/Expert";
 import Roles from "../Roles/Roles";
 import Stories from "../Stories/Stories";
+import Quiz from "../Quiz/Quiz";
+import quizQuestions from "../../assets/quizQuestions.json";
+import Questions from "../Questions/Questions";
 
-function Main() {
+function Main({ quizOpen, handleOverlayClick }) {
   return (
     <main>
       <Share />
+      <Quiz
+        quizQuestions={quizQuestions}
+        quizOpen={quizOpen}
+        handleOverlayClick={handleOverlayClick}
+      />
       <Tasks />
       <Roles />
       <Expert />
       <Faculty facultyList={facultyList} facultyInfo={facultyInfo} />
-      <VacanciesList vacancies={vacancies} reviews={reviews}/>
-      <Stories/>
-      <Join/>
+      <VacanciesList vacancies={vacancies} reviews={reviews} />
+      <Stories />
+      <Join />
+      <Questions />
     </main>
   );
 }
