@@ -102,14 +102,17 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 575px) {
+
+  .join {
+    min-height: 682px;
+  }
   .join__header {
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 22px;
   }
 
-  .join__img__blue-arrow,
-  .join__img_star {
+  .join__img__blue-arrow, .join__img_star {
     display: none;
   }
 
@@ -129,8 +132,11 @@
   .join-btn {
     width: 258px;
     height: 50px;
-    position: static;
     margin-top: 50px;
+    top: 69%;
+    left: 11%;
+    font-size: 16px;
+line-height: 20px;
   }
 
   .join {
