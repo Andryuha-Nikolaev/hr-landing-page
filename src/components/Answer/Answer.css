@@ -3,13 +3,11 @@
 }
 
 .quiz__input:hover + label {
-  background-color: #f8f8f8;
+  border: 2px solid #2559f6;
 }
 
 .quiz__input:checked + label {
-  background-color: #2559f6;
-  color: #ffffff;
-  border: none;
+  border: 2px solid #000000;
 }
 
 .quiz__label {

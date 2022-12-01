@@ -3,32 +3,36 @@
     "number": "1",
     "question": "Какая область вас интересует?",
     "answers": [
-      { "number": 1, "answer": "Ответ 1", "value": "Наставник" },
-      { "number": 2, "answer": "Ответ 2", "value": "Ревьюер" }
+      { "number": 1, "answer": "Программирование", "prof": "reviewer" },
+      { "number": 2, "answer": "Анализ данных", "prof": "mentor" },
+      { "number": 3, "answer": "Менеджмент", "prof": "reviewer" },
+      { "number": 4, "answer": "Маркетинг", "prof": "mentor" },
+      { "number": 5, "answer": "Дизайн", "prof": "reviewer" }
     ]
   },
   {
     "number": "2",
     "question": "Сколько лет вы работаете суммарно в данной области?",
     "answers": [
-      { "number": 1, "answer": "Ответ 1", "value": "Наставник" },
-      { "number": 2, "answer": "Ответ 2", "value": "Ревьюер" }
+      { "number": 1, "answer": "Более 2 лет", "prof": "reviewer" },
+      { "number": 2, "answer": "Менее 2 лет", "prof": "mentor" },
+      { "number": 3, "answer": "Нет опыта", "prof": "" }
     ]
   },
   {
     "number": "3",
     "question": "Вы когда то имели опыт выступления на публику?",
     "answers": [
-      { "number": 1, "answer": "Ответ 1", "value": "berger" },
-      { "number": 2, "answer": "Ответ 2", "value": "gfdkl" }
+      { "number": 1, "answer": "Да", "prof": "mentor" },
+      { "number": 2, "answer": "Нет", "prof": "reviewer" }
     ]
   },
   {
     "number": "4",
     "question": "Вопрос 4",
     "answers": [
-      { "number": 1, "answer": "Ответ 1", "value": "Наставник" },
-      { "number": 2, "answer": "Ответ 2", "value": "Ревьюер" }
+      { "number": 1, "answer": "Ответ 1", "prof": "reviewer" },
+      { "number": 2, "answer": "Ответ 2", "prof": "mentor" }
     ]
   },
   {
