@@ -18,6 +18,7 @@ function Quiz({
   const [isQuizFinished, setisQuizFinished] = useState(false);
   const [answerState, setAnswerState] = useState(0);
   const [isAnswered, setisAnswered] = useState(false);
+  const [answerNumber, setAnswerNumber] = useState(0);
 
   function countPoints() {
     if (reviewerPoints > mentorPoints) {
@@ -26,8 +27,9 @@ function Quiz({
       setMentorProffession(true);
     }
   }
-  function handleRadioChange(stateNumber) {
-    setAnswerState(stateNumber);
+  function handleRadioChange(answer) {
+    setAnswerState(answer.prof);
+    setAnswerNumber(answer.number);
     setisAnswered(false);
   }
 
@@ -60,6 +62,8 @@ function Quiz({
     } else {
       plusMentorPoints();
     }
+
+    setAnswerNumber(0);
   }
 
   function plusReviewerPoints() {
@@ -112,6 +116,7 @@ function Quiz({
                   answers={answers}
                   key={index}
                   handleRadioChange={handleRadioChange}
+                  answerNumber={answerNumber}
                 />
               ))}
             </div>

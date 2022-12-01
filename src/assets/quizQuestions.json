@@ -16,7 +16,15 @@
     "answers": [
       { "number": 1, "answer": "Более 2 лет", "prof": "reviewer" },
       { "number": 2, "answer": "Менее 2 лет", "prof": "mentor" },
-      { "number": 3, "answer": "Нет опыта", "prof": "" }
+      { "number": 3, "answer": "Нет опыта", "prof": "mentor" }
+    ]
+  },
+  {
+    "number": "3",
+    "question": "Вы когда то имели опыт выступления на публику?",
+    "answers": [
+      { "number": 1, "answer": "Да", "prof": "mentor" },
+      { "number": 2, "answer": "Нет", "prof": "reviewer" }
     ]
   }
 ]
