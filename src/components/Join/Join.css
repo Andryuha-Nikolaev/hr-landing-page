@@ -55,7 +55,7 @@
   width: 306px;
   height: 59px;
   border-radius: 100px;
-  background-color: var(--color-button-secondary);
+  background-color: var(--color-button-primary);
   color: var(--color-text-secondary);
   border: none;
   font-weight: 400;
@@ -91,4 +91,40 @@
   height: 358px;
   align-self: flex-end;
   margin-top: 54px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .join__header {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 22px;
+  }
+
+  .join__img__blue-arrow,.join__img_star {
+    display: none;
+  }
+
+  .join__text {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .join__img_programmer {
+    width: 335px;
+    height:188px;
+    margin-top: 35px;
+  }
+
+  .join-btn {
+    width: 258px;
+    height: 50px;
+    position: static;
+  }
+
+  .join {
+    max-width: calc(100% - (20px*2));
+  }
+
+
 }
