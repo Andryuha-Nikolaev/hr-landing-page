@@ -6,24 +6,24 @@ function Form({onClose}) {
     <form className="form" autoComplete="off" required>
       <legend className="form__title">Заполнить заявку</legend>
       <button className="form__btn_type_close" type="button"  onClick={onClose}></button>
-      <input className="form__input form__input_size_l" placeholder="Иванов Владислав Иванович" type="text" name="name" />
+      <input className="form__input form__input_name" placeholder="Иванов Владислав Иванович" type="text" name="name" />
 
       <div className="form__wrap">
-        <input className="form__input form__input_size_xs" placeholder="ivanoff@ya.ru" type="email" name="email" />
-        <input className="form__input form__input_size_xs" placeholder="8-(910)-757-16-16" type="tel" name="tel" />
+        <input className="form__input form__input_email" placeholder="ivanoff@ya.ru" type="email" name="email" />
+        <input className="form__input form__input_tel" placeholder="8-(910)-757-16-16" type="tel" name="tel" />
       </div>
-     <div className="form__wrap">
-        <input className="form__input form__input_size_s" placeholder="https://t.me/user_name" type="url" name="telegramm" />
-        <label className="form__text form__telegram" htmlFor="telegramm">*</label>
+     <div className="form__wrap input__telegram">
+        <input className="form__input form__input_telegram" placeholder="https://t.me/user_name" type="url" name="telegramm" />
+        <label className="form__text form__telegram" htmlFor="telegramm"></label>
      </div>
 
-      <select className="form__input form__input_size_s form__select">
+      <select className="form__input form__input_role form__select">
           <option className="form__input_size_s" value="Какая роль вам ближе?">Какая роль вам ближе?</option>
           <option className="" value="Наставник">Наставник</option>
           <option className="" value="Ревьюер">Ревьюер</option>
         </select>
 
-        <select className="form__input form__input_size_m form__select">
+        <select className="form__input form__input_faculty form__select">
           <option className="form__input form__input_size_m" value="Выберите направление (факультет)">Выберите направление (факультет)</option>
           <option className="" value="Программирование">Программирование</option>
           <option className="" value="Дизайн">Дизайн</option>
@@ -34,7 +34,7 @@ function Form({onClose}) {
 
         <textarea className="form__input_text-area form__input_size_l" placeholder="Перечислите набор технологий, которыми вы владеете и уровень владения каждой"></textarea>
         <div className="form__wrap form__resume">
-          <input className="form__input form__input_size_xs" placeholder="Ссылка на резюме" type="url" name="resume" />
+          <input className="form__input form__input_resume" placeholder="Ссылка на резюме" type="url" name="resume" />
           <label className="form__text" htmlFor="resume"></label>
         </div>
 

@@ -2,7 +2,13 @@ import { useState } from "react";
 import Answer from "../Answer/Answer";
 import "./Quiz.css";
 
-function Quiz({ quizQuestions, quizOpen, handleOverlayClick }) {
+function Quiz({
+  quizQuestions,
+  quizOpen,
+  handleOverlayClick,
+  handleOpenForm,
+  closeQuiz,
+}) {
   const [questionState, setQuestionState] = useState(0);
   const [reviewerPoints, setReviewerPoints] = useState(0);
   const [mentorPoints, setMentorPoints] = useState(0);
@@ -28,6 +34,16 @@ function Quiz({ quizQuestions, quizOpen, handleOverlayClick }) {
   function startQuiz() {
     setisQuizStarted(true);
     setisAnswered(true);
+  }
+
+  function openForm() {
+    closeQuiz();
+    setReviewerProffession(false);
+    setMentorProffession(false);
+    handleOpenForm();
+    setisQuizStarted(false);
+    setisQuizFinished(false);
+    setQuestionState(0);
   }
 
   function nextQuestion() {
@@ -121,7 +137,9 @@ function Quiz({ quizQuestions, quizOpen, handleOverlayClick }) {
             Чтобы приблизить возможность работы в нашей команде, заполните,
             пожалуйста, форму обратной связи и с вами свяжется наш рекрутер.
           </p>
-          <button className="quiz__button">Присоедениться</button>
+          <button className="quiz__button" onClick={openForm}>
+            Присоедениться
+          </button>
         </section>
       )}
       {isQuizFinished && reviewerProffession && (
@@ -136,7 +154,9 @@ function Quiz({ quizQuestions, quizOpen, handleOverlayClick }) {
             работы в данной сфере у вас составляет более 5 лет. Вы также
             отметили, что у вас есть опыт в проведении вебинаров.
           </p>
-          <button className="quiz__button">Присоедениться</button>
+          <button className="quiz__button" onClick={openForm}>
+            Присоедениться
+          </button>
         </section>
       )}
     </div>

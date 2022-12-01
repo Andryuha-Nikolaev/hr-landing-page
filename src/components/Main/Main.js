@@ -14,7 +14,15 @@ import Quiz from "../Quiz/Quiz";
 import quizQuestions from "../../assets/quizQuestions.json";
 import Questions from "../Questions/Questions";
 
-function Main({ openQuiz, quizOpen, handleOverlayClick }) {
+function Main({
+  openQuiz,
+  quizOpen,
+  handleOverlayClick,
+  handleOpenForm,
+  formOpen,
+  handleFormClose,
+  closeQuiz,
+}) {
   return (
     <main>
       <Share openQuiz={openQuiz} />
@@ -22,6 +30,8 @@ function Main({ openQuiz, quizOpen, handleOverlayClick }) {
         quizQuestions={quizQuestions}
         quizOpen={quizOpen}
         handleOverlayClick={handleOverlayClick}
+        handleOpenForm={handleOpenForm}
+        closeQuiz={closeQuiz}
       />
       <Tasks />
       <Roles />
@@ -29,7 +39,12 @@ function Main({ openQuiz, quizOpen, handleOverlayClick }) {
       <Faculty facultyList={facultyList} facultyInfo={facultyInfo} />
       <VacanciesList vacancies={vacancies} reviews={reviews} />
       <Stories />
-      <Join />
+      <Join
+        handleOpenForm={handleOpenForm}
+        formOpen={formOpen}
+        handleFormClose={handleFormClose}
+        handleOverlayClick={handleOverlayClick}
+      />   
       <Questions />
     </main>
   );
