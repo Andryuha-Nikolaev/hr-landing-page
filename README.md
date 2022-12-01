@@ -33,7 +33,7 @@ https://andryuha-nikolaev.github.io/hr-landing-page/
 + CCS3
 + JavaScript (стандарт ES6)
 + React (Create React App, портирование разметки в JSX, функциональные компоненты + хуки)
-+ Адаптивная верстка (мобильные устройства, планшеты, десктопы)
++ Адаптивная верстка (мобильные устройства, десктопы)
 + Flexbox
 + Grid Layout
 + Позиционирование
