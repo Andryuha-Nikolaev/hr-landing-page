@@ -19,7 +19,7 @@
   visibility: visible;
   opacity: 1;
 }
-
+  
 .quiz {
   display: flex;
   flex-direction: column;
