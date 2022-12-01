@@ -13,8 +13,8 @@
 }
 
 .form__btn_type_close {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   background-image: url(../../images/close.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,6 +54,21 @@
   left: 15px;
   width: 275px;
   height: 42px;
+  color: #858585;
+}
+
+.form__resume:hover {
+ cursor: pointer;
+}
+
+.form__resume:hover::after {
+  content: "Пожалуйста, проверьте, что вы открыли доступ к документу";
+  position: absolute;
+  top: 14px;
+  left: 299px;
+  width: 275px;
+  height: 42px;
+  color: #858585;
 }
 
 .form__title {
@@ -70,6 +85,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+  border: 1px solid #858585;
 }
 
 .form__input_size_l {
@@ -100,17 +116,17 @@
 }
 
 .form__btn_type_submit {
-  width:182px;
-  height: 59px;
+  width:172px;
+  height: 61px;
   border-radius: 100px;
-  background-color: var(--color-button-secondary);
+  background-color: var(--color-button-primary);
   border: none;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
   color: var(--color-text-secondary);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .form__btn_type_submit:hover {
@@ -156,7 +172,7 @@
   width: 30px;
   height: 30px;
   background-color: var(--main-bg-color);
-  border: 3px solid var(--color-button-secondary);
+  border: 1px solid #858585;
   border-radius: 5px;
 }
 
