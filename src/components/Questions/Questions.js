@@ -41,8 +41,8 @@ function Questions() {
                   : "questions__answer"
               }
             >
-              Конечно. Мы заключим с вами договор ГПХ или оплатим оказанные
-              услуги через Solar Staff.
+              Да. У нас есть курсы подготовки специалистов, где вы с нуля
+              освоите все тонкости преподавания
             </p>
           </li>
           <li className="questions__list-item">
@@ -78,7 +78,7 @@ function Questions() {
           </li>
           <li className="questions__list-item">
             <p className="questions__question">
-              У меня будет вводный курс?
+              Как оформляется сотрудничество?
               {question3 ? (
                 <img
                   src={imageCross}
@@ -102,8 +102,8 @@ function Questions() {
                   : "questions__answer"
               }
             >
-              Да. У нас есть курсы подготовки специалистов, где вы с нуля
-              освоите все тонкости преподавания.
+              Конечно. Мы заключим с вами договор ГПХ или оплатим оказанные
+              услуги через Solar Staff.
             </p>
           </li>
           <li className="questions__list-item">
@@ -138,7 +138,11 @@ function Questions() {
           </li>
         </ul>
       </div>
-      <img src={images.star} alt="падающая звезда" className="questions__star"/>
+      <img
+        src={images.star}
+        alt="падающая звезда"
+        className="questions__star"
+      />
     </section>
   );
 }
