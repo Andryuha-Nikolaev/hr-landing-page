@@ -18,45 +18,5 @@
       { "number": 2, "answer": "Менее 2 лет", "prof": "mentor" },
       { "number": 3, "answer": "Нет опыта", "prof": "" }
     ]
-  },
-  {
-    "number": "3",
-    "question": "Вы когда то имели опыт выступления на публику?",
-    "answers": [
-      { "number": 1, "answer": "Да", "prof": "mentor" },
-      { "number": 2, "answer": "Нет", "prof": "reviewer" }
-    ]
-  },
-  {
-    "number": "4",
-    "question": "Вопрос 4",
-    "answers": [
-      { "number": 1, "answer": "Ответ 1", "prof": "reviewer" },
-      { "number": 2, "answer": "Ответ 2", "prof": "mentor" }
-    ]
-  },
-  {
-    "number": "5",
-    "question": "Вопрос 5",
-    "answers": [
-      { "number": 1, "answer": "Ответ 1", "value": "Наставник" },
-      { "number": 2, "answer": "Ответ 2", "value": "Ревьюер" }
-    ]
-  },
-  {
-    "number": "6",
-    "question": "Вопрос 6",
-    "answers": [
-      { "number": 1, "answer": "Ответ 1", "value": "Наставник" },
-      { "number": 2, "answer": "Ответ 2", "value": "Ревьюер" }
-    ]
-  },
-  {
-    "number": "7",
-    "question": "Вопрос 7",
-    "answers": [
-      { "number": 1, "answer": "Ответ 1", "value": "Наставник" },
-      { "number": 2, "answer": "Ответ 2", "value": "Ревьюер" }
-    ]
   }
 ]
