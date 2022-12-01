@@ -1,5 +1,6 @@
 .vacancies {
-  background-color: var(--color-block-bg-quaternary);
+  /* background-color: var(--color-block-bg-quaternary); */
+  background-color: #eaeaea;
   padding-bottom: 60px;
 }
 
