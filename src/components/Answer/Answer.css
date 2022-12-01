@@ -25,3 +25,12 @@
   font-size: 20px;
   line-height: 28px;
 }
+
+@media (max-width: 576px) {
+  .quiz__label {
+    padding: 10px 5px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
