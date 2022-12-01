@@ -21,6 +21,9 @@
   margin-bottom: 35px;
 }
 
+.vacancies__button-container {
+  display: flex;
+}
 .vacancies__btn {
   width: 270px;
   font-style: normal;
@@ -52,6 +55,7 @@
   border-bottom: solid 4px var(--color-button-vacansy-active);
   color: var(--color-text-tertiary);
   cursor: default;
+  order: -1;
 }
 
 .vacancies__list {
@@ -88,6 +92,9 @@
 .vacancies__see-all:hover {
   opacity: 0.8;
 }
+.vacancies__btn_active::before {
+  content: "Для ";
+}
 
 @media (max-width: 576px) {
   .vacancies__title {
@@ -102,13 +109,9 @@
     line-height: 28px;
     margin: 0px;
   }
-  .vacancies__btn_active::before {
-    content: "Для ";
-  }
 
   .vacancies__btn_active {
     width: max-content;
-    order: -1;
     margin-right: 10px;
   }
 
@@ -122,8 +125,5 @@
   .vacancies__list {
     padding-bottom: 30px;
     row-gap: 20px;
-  }
-  .vacancies__button-container {
-    display: flex;
   }
 }
