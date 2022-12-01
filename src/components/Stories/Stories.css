@@ -125,6 +125,7 @@
   .next {
     display: none;
   }
+
   .slide {
     width: 271px;
     height: 471px;
@@ -132,6 +133,7 @@
     align-items: center;
     justify-content: space-around;
   }
+
   .card {
     width: 271px;
     height: 334px;
@@ -139,6 +141,7 @@
     align-items: center;
     justify-content: space-around;
   }
+
   .slide__text {
     font-size: 23px;
     line-height: 27px;
@@ -146,9 +149,10 @@
     max-width: 290px;
     margin-top: 8px;
   }
-.swiper-slide-active {
-  width: 334px;
-}
+
+  .swiper-slide-active {
+    width: 334px;
+  }
 
   .slide__name {
     font-size: 14px;
@@ -209,6 +213,7 @@
     opacity: 1;
     background: rgba(0, 0, 0, 0.2);
   }
+
   .swiper-pagination-bullet-active {
     color: #fff;
     background: var(--color-block-bg-tertiary);
@@ -239,4 +244,3 @@
     display: none;
   }
 }
-
