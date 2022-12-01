@@ -49,6 +49,7 @@ https://andryuha-nikolaev.github.io/hr-landing-page/
 ### Ключевые точки для media queries:
 - 1440px
 - 576px
+- 375px
 
 
 
