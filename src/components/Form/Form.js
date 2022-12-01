@@ -42,7 +42,7 @@ function Form({onClose}) {
           <input className="form__checkbox" type="checkbox" name="agree"/>
           <span className="form__checkbox-style"></span>
         </label>
-        <button className="form__btn_type_submit" type="submit">Отправить</button>
+        <button className="form__btn_type_submit" type="submit">Посмотреть вакансии</button>
     </form>
   );
 }

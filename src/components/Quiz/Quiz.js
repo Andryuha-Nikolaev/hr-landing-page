@@ -143,7 +143,7 @@ function Quiz({
             пожалуйста, форму обратной связи и с вами свяжется наш рекрутер.
           </p>
           <button className="quiz__button" onClick={openForm}>
-            Присоедениться
+            Присоединиться
           </button>
         </section>
       )}
