@@ -1,5 +1,6 @@
 .tasks {
   margin-top: 58px;
+  margin-bottom: 44px;
 }
 
 .tasks__container {
@@ -14,7 +15,7 @@
   max-width: 207px;
   max-height: 455px;
   position: absolute;
-  left: 0;
+  left: -64px;
   top: 0;
 }
 
@@ -26,7 +27,7 @@
 
 .tasks__content {
   width: 100%;
-  padding: 27px 224px 0;
+  padding: 27px 160px 0;
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -80,7 +81,104 @@
 
 .tasks__image-abstract {
   position: absolute;
-  transform: rotate(20deg);
-  left: -37px;
-  bottom: -300px;
+  left: -25px;
+  /* left: -141px; */
+  bottom: -320px;
+}
+
+.tasks__image-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .tasks__image {
+    max-width: 90px;
+    max-height: 198px;
+    left: 0;
+  }
+
+  .tasks__image_bottom {
+    width: 58px;
+    height: 195px;
+  }
+
+  .tasks__content {
+    padding: 27px 90px 0;
+    gap: 20px;
+  }
+  .tasks__image-abstract {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tasks {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0 20px;
+  }
+
+  .tasks__container {
+    min-height: 648px;
+  }
+
+  .tasks__image {
+    max-width: 90px;
+    max-height: 198px;
+    position: absolute;
+    left: -8px;
+    top: 0;
+  }
+
+  .tasks__image_bottom {
+    position: absolute;
+    right: 0;
+    bottom: 186px;
+    width: 58px;
+    height: 195px;
+  }
+
+  .tasks__content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .tasks__info-title {
+    width: 199px;
+    height: 29px;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .tasks__info {
+    max-width: 246px;
+    margin-left: auto;
+  }
+
+  .tasks__info_right {
+    margin-left: 0;
+    max-width: 246px;
+    margin-right: auto;
+  }
+
+  .tasks__info-text {
+    font-size: 16px;
+    line-height: 19px;
+    gap: 5px;
+  }
+
+  .tasks__info-container {
+    margin-top: 15px;
+    gap: 5px;
+  }
+
+  .tasks__image-mobile {
+    display: block;
+    margin: 0 auto;
+  }
 }

@@ -3,6 +3,7 @@ import "./Tasks.css";
 import tasksImageGirl from "../../images/tasks-image1.png";
 import tasksImageBoy from "../../images/tasks-image2.png";
 import tasksImage from "../../images/tasks-image3.svg";
+import tasksImageMobile from "../../images/tasks-image-mobile.svg";
 import mark from "../../images/mark.svg";
 
 function Tasks() {
@@ -67,6 +68,11 @@ function Tasks() {
           src={tasksImageBoy}
           alt="изображение парня"
           className="tasks__image_bottom"
+        />
+        <img
+          src={tasksImageMobile}
+          alt="абстракное изображение для мобильной версии"
+          className="tasks__image-mobile"
         />
       </div>
     </section>
