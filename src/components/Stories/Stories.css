@@ -197,27 +197,23 @@
     margin: 25px 0 35px;
   }
 
-  .swiper-pagination {
-    position: absolute;
-    right: 44px;
-    margin: 0;
-    display: block;
-  }
-  .swiper-pagination-bullet {
-    border-radius: 0 !important;
-    width: 38px !important;
-    height: 3px !important;
+  .slider__pag {
+    border-radius: 0 ;
+    width: 38px ;
+    height: 3px ;
     text-align: center;
     color: #000;
-    margin: 0 !important;
+    margin: 0 ;
     opacity: 1;
     background: rgba(0, 0, 0, 0.2);
+    display: inline-block;
   }
 
-  .swiper-pagination-bullet-active {
+  .slider__pag_active {
     color: #fff;
     background: var(--color-block-bg-tertiary);
   }
+
 }
 
 @media screen and (min-width: 575px) and (max-width: 1110px) {
