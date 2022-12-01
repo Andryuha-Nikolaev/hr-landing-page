@@ -104,9 +104,6 @@
     grid-template-columns: 1fr;
   }
 
-  .footer__contacts {
-  }
-
   .footer__tel {
     font-size: 32px;
     line-height: 38px;
@@ -138,9 +135,6 @@
   .footer__text {
     font-size: 14px;
     line-height: 16px;
-  }
-
-  .footer__social-media {
   }
 
   .footer__social-media-icon {
