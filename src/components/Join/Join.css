@@ -5,8 +5,9 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
+  min-height: 766px;
 }
 
 .join__header {
@@ -14,13 +15,16 @@
   font-weight: 500;
   font-size: 60px;
   line-height: 60px;
+  margin-bottom: 58px;
+  max-width: 559px;
 }
 
 .join__text {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  max-width: 655px;
+  max-width: 460px;
+  z-index: 5;
 }
 
 .pop-up {
@@ -52,17 +56,17 @@
 }
 
 .join-btn {
-  width: 306px;
-  height: 59px;
+  width: 316px;
+  height: 71px;
   border-radius: 100px;
-  background-color: var(--color-button-secondary);
+  background-color: var(--color-button-primary);
   color: var(--color-text-secondary);
   border: none;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-weight:500;
+  font-size: 18px;
+  line-height: 21px;
   position: absolute;
-  top: 47%;
+  top: 58%;
   left: 0;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
@@ -74,22 +78,62 @@
 }
 
 .join__img_star {
-  width: 215px;
-  height: 117px;
+  width: 306px;
+  height: 216px;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 9%;
+  right: -1%;
 }
 
 .join__img__blue-arrow {
   position: absolute;
-  top: 278px;
-  left: 166px;
+  bottom: 14%;
+  left: 18%;
 }
 
 .join__img_programmer {
-  width: 635px;
-  height: 358px;
+  width: 818px;
+  height: 532px;
   align-self: flex-end;
-  margin-top: 54px;
+  margin-top: -13%;
+  margin-right: -5%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .join__header {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 22px;
+  }
+
+  .join__img__blue-arrow,
+  .join__img_star {
+    display: none;
+  }
+
+  .join__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .join__img_programmer {
+    width: 335px;
+    height: 188px;
+    margin-top: 35px;
+    align-self: center;
+  }
+
+  .join-btn {
+    width: 258px;
+    height: 50px;
+    position: static;
+    margin-top: 50px;
+  }
+
+  .join {
+    max-width: calc(100% - (20px * 2));
+    align-items: center;
+    padding-top: 35px;
+  }
 }
