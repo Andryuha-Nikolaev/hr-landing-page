@@ -12,29 +12,21 @@ import images from "../../utils/constants";
 
 function Stories() {
 
-  // еще есть вот такая функция отрисовки, но я не могу ее задействовать
-
-  // const pagination = {
-  //   clickable: true,
-  //   renderBullet: function (index, className) {
-  //     return '<span class="' + className + '">' + (index + 1) + "</span>";
-  //   },
-  // };
-
   return (
     <section className="stories">
-      <h2 className="stories__header">Истории ребят из нашей команды</h2>
+      <h2 className="stories__header">Истории ребят из&nbsp;нашей&nbsp;команды</h2>
       <div className="stories-wrap">
         <Swiper
+        style={{
+          "--swiper-pagination-color": "#2559f6",
+          "--swiper-pagination-width": "300px",
+        }}
           direction={"horizontal"}
           slidesPerView={1}
           spaceBetween={30}
           mousewheel={true}
-          pagination={{
-            type: 'custom',
-            bulletClass:  ".slider__pag",
-            bulletActiveClass: ".slider__pag_active"
-         }}
+          pagination=
+           { {clickable: true}}
           modules={[Mousewheel, Pagination]}
           className="slider"
         >
