@@ -17,19 +17,16 @@ function Stories() {
       <h2 className="stories__header">Истории ребят из&nbsp;нашей&nbsp;команды</h2>
       <div className="stories-wrap">
         <Swiper
-        // style={{
-        //   "--swiper-pagination-color": "#2559f6",
-        //   "--swiper-pagination-width": "300px",
-        // }}
+        style={{
+          "--swiper-pagination-color": "#2559f6",
+          "--swiper-pagination-width": "300px",
+        }}
           direction={"horizontal"}
           slidesPerView={1}
           spaceBetween={30}
           mousewheel={true}
-          pagination={{
-
-            // bulletClass:  "slider__pag",
-            // bulletActiveClass: "slider__pag_active"
-         }}
+          pagination=
+           { {clickable: true}}
           modules={[Mousewheel, Pagination]}
           className="slider"
         >

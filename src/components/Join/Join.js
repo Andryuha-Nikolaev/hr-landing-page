@@ -24,7 +24,8 @@ function handleOverlayClick(e) {
   return (
     <section className="join">
       <h2 className="join__header">Не нашли подходящей роли?</h2>
-      <p className="join__text">Если вам интересно поработать с нами, заполните заявку. Мы постараемся подобрать вакансию под ваш опыт</p>
+      <p className="join__text">Если вам интересно поработать с нами, заполните заявку.
+Мы постараемся подобрать предложение под ваш опыт.</p>
       <div className={`pop-up ${formOpen && "pop-up_opened"}`} onClick={handleOverlayClick}>
               <div className="pop-up__container">
           <Form onClose={handleFormClose}/>
