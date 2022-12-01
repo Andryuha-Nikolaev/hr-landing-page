@@ -1,6 +1,6 @@
 import "./Answer.css";
 
-function Answer({ answers, handleRadioChange }) {
+function Answer({ answers, handleRadioChange, answerNumber }) {
   return (
     <>
       <input
@@ -8,9 +8,9 @@ function Answer({ answers, handleRadioChange }) {
         id={`radio${answers.number}`}
         name="radio"
         value={answers.prof}
-        // checked={value == `${answers.prof}` ? true : false}
+        checked={answerNumber === answers.number}
         className="quiz__input"
-        onChange={() => handleRadioChange(answers.prof)}
+        onChange={() => handleRadioChange(answers)}
       ></input>
       <label className="quiz__label" htmlFor={`radio${answers.number}`}>
         {answers.answer}
