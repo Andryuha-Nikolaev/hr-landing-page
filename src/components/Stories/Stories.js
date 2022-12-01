@@ -1,28 +1,33 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel } from "swiper";
+import { Mousewheel, Pagination } from "swiper";
 import {
   SlideNextButton,
   SlidePrevButton,
 } from "../../utils/sliderButtons";
 import "./Stories.css";
 import "swiper/css";
+import "swiper/css/pagination";
 import images from "../../utils/constants";
 
 function Stories() {
+
   return (
     <section className="stories">
-      <h2 className="stories__header">Истории ребят из нашей команды</h2>
+      <h2 className="stories__header">Истории ребят из&nbsp;нашей&nbsp;команды</h2>
       <div className="stories-wrap">
         <Swiper
+        style={{
+          "--swiper-pagination-color": "#2559f6",
+          "--swiper-pagination-width": "300px",
+        }}
           direction={"horizontal"}
           slidesPerView={1}
           spaceBetween={30}
           mousewheel={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Mousewheel]}
+          pagination=
+           { {clickable: true}}
+          modules={[Mousewheel, Pagination]}
           className="slider"
         >
           <SlidePrevButton />
