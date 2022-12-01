@@ -228,6 +228,7 @@
     width: 337px;
     min-height: 697px;
     padding: 10px;
+    overflow-x: hidden;
   }
 
   .form__wrap {
@@ -266,6 +267,14 @@
     width: 316px;
     height: 42px;
     color: #858585;
+  }
+
+  .input__telegram:hover::after {
+    display: none;
+  }
+
+  .form__resume:hover::after {
+    display: none;
   }
 
   .form__resume {
@@ -336,7 +345,7 @@
   .form__btn_type_submit {
     width: 246px;
     height: 50px;
-    border-radius:120px;
+    border-radius: 120px;
     font-size: 16px;
     line-height: 20px;
     align-self: center;

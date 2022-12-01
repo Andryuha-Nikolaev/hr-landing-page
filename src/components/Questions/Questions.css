@@ -63,14 +63,13 @@
 
 @media screen and (min-width: 320px) and (max-width: 575px) {
   .questions {
-    padding-bottom: 115px;
+    padding: 0 20px 115px;
     position: relative;
   }
 
   .questions__container {
-    max-width: 335px;
+    /* max-width: 335px; */
     margin: 0 auto;
-
   }
 
   .questions__title {
@@ -88,7 +87,7 @@
 
   .questions__question {
     font-size: 20px;
-line-height: 23px;
+    line-height: 23px;
     width: 100%;
     min-height: 66px;
     background-color: var(--color-block-bg-primary);
@@ -121,7 +120,7 @@ line-height: 23px;
     position: absolute;
     left: 0;
     top: 0;
-    border-radius:35px;
+    border-radius: 35px;
   }
 
   .questions__star {

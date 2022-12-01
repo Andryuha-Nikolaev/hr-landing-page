@@ -103,7 +103,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
   .join {
-    min-height: 682px;
+    min-height: 634px;
   }
   .join__header {
     font-size: 32px;
@@ -111,7 +111,8 @@
     margin-bottom: 22px;
   }
 
-  .join__img__blue-arrow, .join__img_star {
+  .join__img__blue-arrow,
+  .join__img_star {
     display: none;
   }
 
@@ -135,7 +136,7 @@
     top: 69%;
     left: 11%;
     font-size: 16px;
-line-height: 20px;
+    line-height: 20px;
   }
 
   .join {
