@@ -225,9 +225,9 @@
 
 @media screen and (min-width: 320px) and (max-width: 575px) {
   .form {
-    width: 334px;
-    min-height: 722px;
-    padding: 35px 5px;
+    width: 337px;
+    min-height: 697px;
+    padding: 10px;
   }
 
   .form__wrap {
@@ -258,12 +258,12 @@
     line-height: 14px;
   }
 
-  .input__telegram:hover::after {
-    content: "заполните, если вам будет удобнее общаться в Телеграм";
+  .input__telegram::after {
+    content: "Заполните, если вам будет удобнее общаться в Телеграм";
     position: absolute;
-    top: -1px;
-    right: -5px;
-    width: 150px;
+    top: 40px;
+    right: -9px;
+    width: 316px;
     height: 42px;
     color: #858585;
   }
@@ -274,14 +274,14 @@
     line-height: 14px;
   }
 
-  .form__resume:hover::after {
-    content: "Пожалуйста, проверьте, что вы открыли доступ к документу";
+  .form__resume::after {
+    content: "Пожалуйста, проверьте, что вы открыли доступ к резюме";
     position: absolute;
     height: 42px;
     color: #858585;
-    top: 1px;
-    left: 179px;
-    width: 144px;
+    top: 41px;
+    left: 9px;
+    width: 328px;
   }
 
   .form__title {
@@ -296,29 +296,27 @@
     padding: 10px 15px;
     font-size: 14px;
     line-height: 20px;
+    border-radius: 10px;
   }
 
   .form__input_name,
-  .form__input_faculty {
-    width: 324px;
-  }
-  .form__input_text-area {
-    width: 307px;
-  }
-
-  .form__input_role {
-    width: 225px;
-  }
-
+  .form__input_faculty,
+  .form__input_text-area,
+  .form__input_role,
   .form__input_email,
   .form__input_tel,
   .form__input_telegram,
   .form__input_resume {
-    width: 173px;
+    width: 315px;
   }
 
   .form__input_email {
     margin-bottom: 10px;
+  }
+
+  .form__input_telegram,
+  .form__input_resume {
+    margin-bottom: 16px;
   }
 
   .form__select {
@@ -336,9 +334,9 @@
   }
 
   .form__btn_type_submit {
-    width: 130px;
+    width: 246px;
     height: 50px;
-    border-radius: 30px;
+    border-radius:120px;
     font-size: 16px;
     line-height: 20px;
     align-self: center;
@@ -370,7 +368,7 @@
     background-color: transparent;
     border: none;
     position: absolute;
-    right: 12px;
+    right: 5px;
     top: 9px;
     cursor: pointer;
   }
