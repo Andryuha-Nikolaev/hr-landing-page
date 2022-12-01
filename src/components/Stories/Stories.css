@@ -122,6 +122,11 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
+
+  .stories {
+    padding: 0 0 100px;
+  }
+
   .prev,
   .next {
     display: none;

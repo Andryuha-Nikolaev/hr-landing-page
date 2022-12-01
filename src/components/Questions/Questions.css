@@ -121,6 +121,7 @@ line-height: 23px;
     position: absolute;
     left: 0;
     top: 0;
+    border-radius:35px;
   }
 
   .questions__star {

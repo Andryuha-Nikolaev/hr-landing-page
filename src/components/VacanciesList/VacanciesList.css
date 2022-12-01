@@ -91,6 +91,10 @@
 }
 
 @media (max-width: 576px) {
+
+  .vacancies {
+    padding-bottom: 45px;
+  }
   .vacancies__title {
     font-size: 34px;
     line-height: 40px;
