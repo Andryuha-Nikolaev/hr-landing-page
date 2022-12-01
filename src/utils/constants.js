@@ -7,6 +7,8 @@ import cloud from "../images/cloud.svg";
 import star from "../images/star.svg";
 import blueArrow from "../images/blue-arrow.svg";
 import programmer from "../images/programmer.svg"
+import closeThin from "../images/close-thin.svg"
+
 
 const images = {
   artem,
@@ -17,7 +19,8 @@ const images = {
   cloud,
   star,
   blueArrow,
-  programmer
+  programmer,
+  closeThin
 };
 
 export default images;
