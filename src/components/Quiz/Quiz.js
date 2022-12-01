@@ -33,6 +33,7 @@ function Quiz({
 
   function startQuiz() {
     setisQuizStarted(true);
+    setisAnswered(true);
   }
 
   function openForm() {
