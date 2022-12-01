@@ -108,11 +108,10 @@
 
 .prev:hover,
 .next:hover {
- opacity: .8;
+  opacity: 0.8;
 }
 
 .slide {
-  width: 950px;
   width: 950px;
   position: relative;
   display: flex;
@@ -120,3 +119,125 @@
   justify-content: space-evenly;
   flex-direction: column;
 }
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .prev,
+  .next {
+    display: none;
+  }
+  .slide {
+    width: 271px;
+    height: 471px;
+    /* padding: 35px 0; */
+    align-items: center;
+    justify-content: space-around;
+  }
+  .card {
+    width: 271px;
+    height: 334px;
+    padding: 35px 15px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .slide__text {
+    font-size: 23px;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    max-width: 290px;
+    margin-top: 8px;
+  }
+.swiper-slide-active {
+  width: 334px;
+}
+
+  .slide__name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .slide__role {
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 166px;
+  }
+
+  .slide__img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .stories-wrap {
+    height: 471px;
+    width: 320px;
+    padding: 0;
+  }
+
+  .slider {
+    height: 511px;
+    width: 297px;
+  }
+
+  .stories__header {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.02em;
+    max-width: 285px;
+  }
+
+  .slide__wrap {
+    width: 334px;
+    min-height: 68px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 25px 0 35px;
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    right: 44px;
+    width: auto !important;
+    left: auto !important;
+    margin: 0;
+    display: block;
+  }
+  .swiper-pagination-bullet {
+    border-radius: 0 !important;
+    width: 38px !important;
+    height: 3px !important;
+    text-align: center;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: var(--color-block-bg-tertiary);
+  }
+}
+
+@media screen and (min-width: 575px) and (max-width: 1110px) {
+  .stories-wrap {
+    max-width: 775px;
+    min-height: 550px;
+  }
+
+  .slider {
+    height: 100%;
+  }
+
+  .slide__wrap {
+    padding-bottom: 0;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1110px) and (max-width: 11100px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+

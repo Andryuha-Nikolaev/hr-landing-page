@@ -33,9 +33,9 @@ function Form({onClose}) {
         </select>
 
         <textarea className="form__input_text-area form__input_size_l" placeholder="Перечислите набор технологий, которыми вы владеете и уровень владения каждой"></textarea>
-        <div className="form__wrap">
+        <div className="form__wrap form__resume">
           <input className="form__input form__input_size_xs" placeholder="Ссылка на резюме" type="url" name="resume" />
-          <label className="form__text" htmlFor="resume">Пожалуйста, проверьте, что вы открыли доступ к документу</label>
+          <label className="form__text" htmlFor="resume"></label>
         </div>
 
         <label className="form__checkbox-wrap form__text" htmlFor="agree">Я даю согласие АНО ДПО «ШАД» и ООО «ЯНДЕКС» на <a className="form__link" href="https://yandex.ru/legal/confidential/" target="balnk">обработку указанных данных</a> для целей рассмотрения анкеты и обратной связи по ней.

@@ -12,6 +12,7 @@ import Roles from "../Roles/Roles";
 import Stories from "../Stories/Stories";
 import Quiz from "../Quiz/Quiz";
 import quizQuestions from "../../assets/quizQuestions.json";
+import Questions from "../Questions/Questions";
 
 function Main({
   quizOpen,
@@ -42,7 +43,8 @@ function Main({
         formOpen={formOpen}
         handleFormClose={handleFormClose}
         handleOverlayClick={handleOverlayClick}
-      />
+      />   
+      <Questions />
     </main>
   );
 }
