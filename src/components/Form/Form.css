@@ -88,6 +88,11 @@
   border: 1px solid #858585;
 }
 
+
+.form__input::placeholder {
+  color: #8E8E8E;
+}
+
 .form__input_size_l {
   width: 665px;
 }
@@ -142,6 +147,10 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+}
+
+.form__input_text-area ::placeholder {
+  color: #8E8E8E;
 }
 
 .form__checkbox-wrap {
