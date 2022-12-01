@@ -3,14 +3,23 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  display: flex;
   top: 0;
   left: 0;
   justify-content: center;
   align-items: center;
-  z-index: 5;
+  z-index: 100;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
+.overlay_opened {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+  
 .quiz {
   display: flex;
   flex-direction: column;
@@ -77,10 +86,21 @@
   font-family: "YS Text";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   color: #ffffff;
   margin-top: 23px;
+  cursor: pointer;
+}
+
+.quiz__button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.quiz__button:disabled {
+  background-color: #eaeaea;
+}
+.quiz__button:active {
 }
 
 .quiz__button_type_qustion {
