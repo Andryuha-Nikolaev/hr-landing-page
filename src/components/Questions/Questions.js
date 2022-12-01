@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Questions.css";
 import imagePlus from "../../images/plus.svg";
 import imageCross from "../../images/cross.svg";
+import images from "../../utils/constants";
 
 function Questions() {
   const [question1, setQuestion1] = useState(false);
@@ -137,6 +138,7 @@ function Questions() {
           </li>
         </ul>
       </div>
+      <img src={images.star} alt="падающая звезда" className="questions__star"/>
     </section>
   );
 }
