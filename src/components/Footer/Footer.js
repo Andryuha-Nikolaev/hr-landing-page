@@ -97,6 +97,7 @@ function Footer() {
                 href="https://academy.yandex.ru/dataschool/"
                 target="_blank"
                 className="footer__link-in-text"
+                rel="noreferrer"
               >
                 Школа анализа данных
               </a>

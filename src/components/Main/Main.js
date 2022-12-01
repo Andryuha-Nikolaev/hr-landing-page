@@ -44,7 +44,7 @@ function Main({
         formOpen={formOpen}
         handleFormClose={handleFormClose}
         handleOverlayClick={handleOverlayClick}
-      />   
+      />
       <Questions />
     </main>
   );
