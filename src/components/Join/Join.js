@@ -11,7 +11,7 @@ function Join({
 }) {
   return (
     <section className="join">
-      <h2 className="join__header">Не нашли подходящей вакансии?</h2>
+      <h2 className="join__header">Не нашли подходящей роли?</h2>
       <p className="join__text">
         Если вам интересно поработать с нами, заполните заявку. Мы постараемся
         подобрать вакансию под ваш опыт
@@ -40,7 +40,7 @@ function Join({
       />
     </section>
   );
-      
+
 }
 
 export default Join;
