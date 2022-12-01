@@ -11,27 +11,28 @@ function VacanciesList({ vacancies, reviews }) {
     <section className="vacancies" id="vacansy">
       <div className="vacancies__container">
         <h2 className="vacancies__title">Открытые предложения</h2>
-        <button
-          className={
-            activeTab === "mentors"
-              ? "vacancies__btn vacancies__btn_active"
-              : "vacancies__btn "
-          }
-          onClick={() => setActiveTab("mentors")}
-        >
-          Для наставников
-        </button>
-        <button
-          className={
-            activeTab === "reviews"
-              ? "vacancies__btn vacancies__btn_active"
-              : "vacancies__btn"
-          }
-          onClick={() => setActiveTab("reviews")}
-        >
-          Для ревьюеров
-        </button>
-
+        <div className="vacancies__button-container">
+          <button
+            className={
+              activeTab === "mentors"
+                ? "vacancies__btn vacancies__btn_active"
+                : "vacancies__btn "
+            }
+            onClick={() => setActiveTab("mentors")}
+          >
+            наставников
+          </button>
+          <button
+            className={
+              activeTab === "reviews"
+                ? "vacancies__btn vacancies__btn_active"
+                : "vacancies__btn"
+            }
+            onClick={() => setActiveTab("reviews")}
+          >
+            ревьюеров
+          </button>
+        </div>
         <ul className="vacancies__list">
           {activeTab === "mentors" &&
             vacancies
