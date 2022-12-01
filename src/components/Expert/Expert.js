@@ -13,7 +13,7 @@ function Expert() {
             <div className="expert__circle">1</div>
             <div className="expert__wrap">
               <p className="expert__title">Выберите роль и заполните заявку</p>
-              <p className="expert__text">
+              <p className="expert__subtitle">
                 После заполнения заявки вам придет ответ на почту и с вами
                 свяжется рекрутер.
               </p>
@@ -25,7 +25,7 @@ function Expert() {
               <p className="expert__title">
                 Пройдите отбор и бесплатное обучение
               </p>
-              <p className="expert__text">
+              <p className="expert__subtitle">
                 Вам необходимо будет пройти тестовое задание и бесплатное
                 обучение
               </p>
@@ -37,7 +37,7 @@ function Expert() {
               <p className="expert__title">
                 Начните делиться знаниями со студентами Яндекс Практикума
               </p>
-              <p className="expert__text">
+              <p className="expert__subtitle">
                 Вам будет назначена группа, с которой вы будете делиться
                 своимопытом и мотивировать
               </p>
