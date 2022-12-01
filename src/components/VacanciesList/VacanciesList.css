@@ -89,3 +89,42 @@
 .vacancies__see-all:hover {
   opacity: 0.8;
 }
+
+@media (max-width: 576px) {
+  .vacancies__title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .vacancies__btn {
+    width: max-content;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0px;
+  }
+  .vacancies__btn_active::before {
+    content: "Для ";
+  }
+
+  .vacancies__btn_active {
+    width: max-content;
+    order: -1;
+    margin-right: 10px;
+  }
+
+  .vacancies__container {
+    padding: 0 20px;
+    padding-bottom: 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .vacancies__list {
+    padding-bottom: 30px;
+    row-gap: 20px;
+  }
+  .vacancies__button-container {
+    display: flex;
+  }
+}
