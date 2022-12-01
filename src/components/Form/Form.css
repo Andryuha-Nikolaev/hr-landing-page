@@ -59,7 +59,7 @@
 }
 
 .form__resume:hover {
- cursor: pointer;
+  cursor: pointer;
 }
 
 .form__resume:hover::after {
@@ -73,39 +73,39 @@
 }
 
 .form__title {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 56px;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 70px;
 }
 
 .form__input {
-  height: 60px;
+  height: 53px;
   border-radius: 20px;
-  padding: 16px;
+  padding: 15px;
   box-sizing: border-box;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 23px;
   border: 1px solid #858585;
 }
 
-
-.form__input::placeholder {
-  color: #8E8E8E;
-}
-
-.form__input_size_l {
+.form__input_name,
+.form__input_text-area {
   width: 665px;
 }
-.form__input_size_m {
+
+.form__input_faculty {
   width: 479px;
 }
-.form__input_size_xs {
-  width: 285px;
+
+.form__input_telegram,
+.form__input_role {
+  width: 348px;
 }
 
-.form__input_size_s {
-  width: 350px;
+.form__input_email,
+.form__input_tel,
+.form__input_resume {
+  width: 283px;
 }
 
 .form__select {
@@ -122,8 +122,7 @@
 }
 
 .form__btn_type_submit {
-
-  width:172px;
+  width: 172px;
   height: 61px;
   border-radius: 100px;
   background-color: var(--color-button-primary);
@@ -152,7 +151,7 @@
 }
 
 .form__input_text-area ::placeholder {
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 
 .form__checkbox-wrap {
@@ -168,8 +167,8 @@
   left: 0;
   top: 0;
   z-index: 5;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 .form__checkbox {
@@ -222,4 +221,148 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .form {
+    width: 334px;
+    min-height: 722px;
+    padding: 35px 5px;
+  }
+
+  .form__btn_type_close {
+    display: none;
+  }
+
+  .form__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .form__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 5px;
+    max-width: 289px;
+  }
+
+  .form__telegram {
+    position: absolute;
+    top: 0;
+    right: 45%;
+    cursor: pointer;
+  }
+
+  .input__telegram {
+    font-weight: 400;
+font-size: 11px;
+line-height: 14px;
+  }
+
+  .input__telegram:hover::after {
+    content: "заполните, если вам будет удобнее общаться в Телеграм";
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    width: 150px;
+    height: 42px;
+    color: #858585;
+  }
+
+  .form__resume {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+
+  }
+
+  .form__resume:hover::after {
+    content: "Пожалуйста, проверьте, что вы открыли доступ к документу";
+    position: absolute;
+    height: 42px;
+    color: #858585;
+    top: 1px;
+    left: 179px;
+    width: 144px;
+  }
+
+  .form__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.02em;
+  }
+
+  .form__input {
+    height: 40px;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .form__input_name,
+  .form__input_faculty {
+    width: 324px;
+  }
+  .form__input_text-area {
+    width: 307px;
+  }
+
+  .form__input_role {
+    width: 225px;
+  }
+
+  .form__input_email,
+  .form__input_tel,
+  .form__input_telegram,
+  .form__input_resume {
+    width: 173px;
+  }
+
+  .form__input_email {
+    margin-bottom: 10px;
+  }
+
+  .form__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../../images/arrow-down.svg);
+    background-size: 21px 12px;
+    background-repeat: no-repeat;
+    background-position: 97% 56%;
+  }
+
+  .form__select::-ms-expand {
+    display: none;
+  }
+
+  .form__btn_type_submit {
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 20px;
+    align-self: center;
+  }
+
+  .form__input_text-area {
+    height: 80px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .form__checkbox-wrap {
+    padding-left: 39px;
+  }
+
+  .form__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
