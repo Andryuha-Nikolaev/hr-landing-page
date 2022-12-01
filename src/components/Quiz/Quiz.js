@@ -4,38 +4,68 @@ import "./Quiz.css";
 
 function Quiz({ quizQuestions, quizOpen, handleOverlayClick }) {
   const [questionState, setQuestionState] = useState(0);
-  const [reviewerPoints, setReviewerPoints] = useState(true);
-  const [mentorPoints, setMentorPoints] = useState(false);
+  const [reviewerPoints, setReviewerPoints] = useState(0);
+  const [mentorPoints, setMentorPoints] = useState(0);
+  const [reviewerProffession, setReviewerProffession] = useState(false);
+  const [mentorProffession, setMentorProffession] = useState(false);
   const [isQuizStarted, setisQuizStarted] = useState(false);
   const [isQuizFinished, setisQuizFinished] = useState(false);
+  const [answerState, setAnswerState] = useState(0);
+  const [isAnswered, setisAnswered] = useState(false);
+
+  function countPoints() {
+    if (reviewerPoints > mentorPoints) {
+      setReviewerProffession(true);
+    } else {
+      setMentorProffession(true);
+    }
+  }
+  function handleRadioChange(stateNumber) {
+    setAnswerState(stateNumber);
+    setisAnswered(false);
+  }
 
   function startQuiz() {
     setisQuizStarted(true);
+    setisAnswered(true);
   }
 
   function nextQuestion() {
     if (questionState > quizQuestions.length - 2) {
       setisQuizFinished(true);
+      countPoints();
     } else {
       setQuestionState(questionState + 1);
+      setisAnswered(true);
+    }
+
+    if (answerState === "reviewer") {
+      plusReviewerPoints();
+    } else {
+      plusMentorPoints();
     }
   }
 
   function plusReviewerPoints() {
+    console.log("rev do " + reviewerPoints);
     setReviewerPoints(reviewerPoints + 1);
+    console.log("rev " + reviewerPoints);
   }
 
   function plusMentorPoints() {
     setMentorPoints(mentorPoints + 1);
+    console.log("mentor " + mentorPoints);
   }
 
   const hanleSubmitForm = (e) => {
     e.preventDefault();
-    console.log(e);
   };
 
   return (
-    <div className={` ${quizOpen && "overlay"}`} onClick={handleOverlayClick}>
+    <div
+      className={` overlay ${quizOpen && "overlay_opened"}`}
+      onClick={handleOverlayClick}
+    >
       {!isQuizStarted && quizOpen && (
         <section className="quiz">
           <h2 className="quiz__title">Определим какая вакансия для вас</h2>
@@ -62,19 +92,24 @@ function Quiz({ quizQuestions, quizOpen, handleOverlayClick }) {
           <form className="quiz__answers-container" onSubmit={hanleSubmitForm}>
             <div className="quiz__answers">
               {quizQuestions[questionState].answers.map((answers, index) => (
-                <Answer answers={answers} key={index} />
+                <Answer
+                  answers={answers}
+                  key={index}
+                  handleRadioChange={handleRadioChange}
+                />
               ))}
             </div>
             <button
               className="quiz__button quiz__button_type_qustion"
               onClick={() => nextQuestion()}
+              disabled={isAnswered}
             >
               Далее
             </button>
           </form>
         </section>
       )}
-      {isQuizFinished && mentorPoints && (
+      {isQuizFinished && mentorProffession && (
         <section className="quiz quiz_type_finalcard">
           <h2 className="quiz__title">Наставник</h2>
           <p className="quiz__subtitle">
@@ -89,7 +124,7 @@ function Quiz({ quizQuestions, quizOpen, handleOverlayClick }) {
           <button className="quiz__button">Присоедениться</button>
         </section>
       )}
-      {isQuizFinished && reviewerPoints && (
+      {isQuizFinished && reviewerProffession && (
         <section className="quiz quiz_type_finalcard">
           <h2 className="quiz__title">Ревьюер</h2>
           <p className="quiz__subtitle">
