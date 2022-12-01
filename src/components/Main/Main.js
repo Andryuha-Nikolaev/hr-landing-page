@@ -14,10 +14,10 @@ import Quiz from "../Quiz/Quiz";
 import quizQuestions from "../../assets/quizQuestions.json";
 import Questions from "../Questions/Questions";
 
-function Main({ quizOpen, handleOverlayClick }) {
+function Main({ openQuiz, quizOpen, handleOverlayClick }) {
   return (
     <main>
-      <Share />
+      <Share openQuiz={openQuiz} />
       <Quiz
         quizQuestions={quizQuestions}
         quizOpen={quizOpen}

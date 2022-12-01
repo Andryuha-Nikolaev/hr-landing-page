@@ -20,7 +20,11 @@ function App() {
     <div className="page">
       <div className="page__content">
         <Header openQuiz={openQuiz} />
-        <Main quizOpen={quizOpen} handleOverlayClick={handleOverlayClick} />
+        <Main
+          openQuiz={openQuiz}
+          quizOpen={quizOpen}
+          handleOverlayClick={handleOverlayClick}
+        />
         <Footer />
       </div>
     </div>

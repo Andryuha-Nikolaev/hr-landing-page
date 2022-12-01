@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import laptop from "../../images/laptop.svg";
+import shareImage from "../../images/share-image-abstract.svg";
+import shareArray from "../../images/share-array.svg";
 import "./Share.css";
 
-function Share() {
+function Share({ openQuiz }) {
   const titleText = [
     "программировании",
     "анализе данных",
@@ -24,7 +26,9 @@ function Share() {
       <div className="share__container">
         <div className="share__wrap">
           <h1 className="share__header_type_color" id="changeText">
-            Делись своим опытом в&nbsp;
+            Делись своим опытом
+            <br />
+            в&nbsp;
             {titleText[index % titleText.length]}
             <br />
             <span className="share__header">
@@ -41,6 +45,22 @@ function Share() {
           </Link>
         </div>
         <img className="share__image" src={laptop} alt="ноутбук" />
+        <div className="share__mobile-section">
+          <p className="share__description">
+            Не знаете, какую вакансию выбрать? Мы можем помочь
+            <img
+              className="share__mobile-button"
+              src={shareArray}
+              alt="стрелка"
+              onClick={openQuiz}
+            />
+          </p>
+          <img
+            src={shareImage}
+            alt="абстракное изображение"
+            className="share__image-abstract"
+          />
+        </div>
       </div>
     </section>
   );
