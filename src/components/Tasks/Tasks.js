@@ -7,7 +7,7 @@ import mark from "../../images/mark.svg";
 
 function Tasks() {
   return (
-    <section className="tasks" id="about-us">
+    <section className="tasks" id="tasks">
       <div className="tasks__container">
         <img
           src={tasksImageGirl}

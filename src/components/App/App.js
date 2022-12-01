@@ -36,6 +36,7 @@ function App() {
       <div className="page__content">
         <Header openQuiz={openQuiz} />
         <Main
+          openQuiz={openQuiz}
           quizOpen={quizOpen}
           closeQuiz={closeQuiz}
           handleOverlayClick={handleOverlayClick}

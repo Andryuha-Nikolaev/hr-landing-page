@@ -15,6 +15,7 @@ import quizQuestions from "../../assets/quizQuestions.json";
 import Questions from "../Questions/Questions";
 
 function Main({
+  openQuiz,
   quizOpen,
   handleOverlayClick,
   handleOpenForm,
@@ -24,7 +25,7 @@ function Main({
 }) {
   return (
     <main>
-      <Share />
+      <Share openQuiz={openQuiz} />
       <Quiz
         quizQuestions={quizQuestions}
         quizOpen={quizOpen}

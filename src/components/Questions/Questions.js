@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Questions.css";
 import imagePlus from "../../images/plus.svg";
 import imageCross from "../../images/cross.svg";
-import Faculty from "../Faculty/Faculty";
 
 function Questions() {
   const [question1, setQuestion1] = useState(false);
@@ -11,7 +10,7 @@ function Questions() {
   const [question4, setQuestion4] = useState(false);
 
   return (
-    <section className="questions">
+    <section className="questions" id="questions">
       <div className="questions__container">
         <h2 className="questions__title">Часто задаваемые вопросы</h2>
         <ul className="questions__list">
