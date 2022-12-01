@@ -223,7 +223,7 @@
   line-height: 21px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 575px) {
+@media screen and (min-width: 320px) and (max-width: 576px) {
   .form {
     width: 337px;
     min-height: 697px;
@@ -372,5 +372,4 @@
     top: 9px;
     cursor: pointer;
   }
-
 }
