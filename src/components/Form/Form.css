@@ -230,10 +230,6 @@
     padding: 35px 5px;
   }
 
-  .form__btn_type_close {
-    display: none;
-  }
-
   .form__wrap {
     display: flex;
     justify-content: space-between;
@@ -364,4 +360,19 @@
     font-size: 14px;
     line-height: 16px;
   }
+
+  .form__btn_type_close {
+    width: 40px;
+    height: 40px;
+    background-image: url(../../images/close-thin.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    cursor: pointer;
+  }
+
 }
