@@ -12,6 +12,7 @@ import Roles from "../Roles/Roles";
 import Stories from "../Stories/Stories";
 import Quiz from "../Quiz/Quiz";
 import quizQuestions from "../../assets/quizQuestions.json";
+import Questions from "../Questions/Questions";
 
 function Main({ quizOpen, handleOverlayClick }) {
   return (
@@ -29,6 +30,7 @@ function Main({ quizOpen, handleOverlayClick }) {
       <VacanciesList vacancies={vacancies} reviews={reviews} />
       <Stories />
       <Join />
+      <Questions />
     </main>
   );
 }
