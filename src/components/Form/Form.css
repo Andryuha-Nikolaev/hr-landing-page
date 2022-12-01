@@ -48,11 +48,11 @@
   cursor: pointer;
 }
 
-.form__telegram:hover::after {
+.input__telegram:hover::after {
   content: "заполните, если вам будет удобнее общаться в Телеграм";
   position: absolute;
-  top: 0;
-  left: 15px;
+  top: 11px;
+  right: 30px;
   width: 275px;
   height: 42px;
   color: #858585;

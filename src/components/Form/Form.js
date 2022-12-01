@@ -12,9 +12,9 @@ function Form({onClose}) {
         <input className="form__input form__input_size_xs" placeholder="ivanoff@ya.ru" type="email" name="email" />
         <input className="form__input form__input_size_xs" placeholder="8-(910)-757-16-16" type="tel" name="tel" />
       </div>
-     <div className="form__wrap">
+     <div className="form__wrap input__telegram">
         <input className="form__input form__input_size_s" placeholder="https://t.me/user_name" type="url" name="telegramm" />
-        <label className="form__text form__telegram" htmlFor="telegramm">*</label>
+        <label className="form__text form__telegram" htmlFor="telegramm"></label>
      </div>
 
       <select className="form__input form__input_size_s form__select">
