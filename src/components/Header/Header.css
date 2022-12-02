@@ -1,17 +1,24 @@
 .header {
-  margin: 0 auto;
-  position: relative;
-  max-width: 1110px;
-  min-height: 77px;
-  display: flex;
-  align-items: center;
-  position: sticky;
   top: 0;
-  justify-content: space-between;
+
   z-index: 99;
   background-color: var(--main-bg-color);
-  box-shadow: 0px 1px 10px #f8f8f8;
+  /* box-shadow: 0px 1px 10px #f8f8f8;
+  border-radius: 0px 0px 10px 10px; */
+  position: sticky;
+  box-shadow: 0px 1px 20px rgba(175, 175, 175, 0.25);
   border-radius: 0px 0px 10px 10px;
+}
+
+.header__container {
+  position: relative;
+  max-width: 1110px;
+  margin: 0 auto;
+  justify-content: space-between;
+  min-height: 77px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .header__logo-container {
