@@ -160,7 +160,7 @@ function Quiz({
             отметили, что у вас есть опыт в проведении вебинаров.
           </p>
           <button className="quiz__button" onClick={openForm}>
-            Присоедениться
+            Присоединиться
           </button>
         </section>
       )}
