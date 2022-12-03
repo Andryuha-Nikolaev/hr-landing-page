@@ -1,9 +1,3 @@
-import { useState } from "react";
-import "./App.css";
-import Header from "../Header/Header";
-import Main from "../Main/Main";
-import Footer from "../Footer/Footer";
-
 function App() {
   const [quizOpen, setquizOpen] = useState(false);
   const [formOpen, setFormOpen] = useState(false);
