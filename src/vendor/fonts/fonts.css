@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/YandexSansText-Regular.woff2") format("woff2"),
+    url("../fonts/YandexSansText-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/YandexSansText-Medium.woff2") format("woff2"),
+    url("../fonts/YandexSansText-Medium.woff") format("woff");
+}

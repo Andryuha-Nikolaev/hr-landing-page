@@ -1,0 +1,67 @@
+[
+  {
+    "description":
+      "Курсы по программированию для тех, кто хочет получить профессию с нуля или выйти на новый уровень в карьере.",
+    "cours1": "Веб-разработчик",
+    "cours2": "Python-разработчик",
+    "cours3": "Java-разработчик",
+    "cours4": "Инженер по тестированию",
+    "url1": "https://practicum.yandex.ru/web/",
+    "url2": "https://practicum.yandex.ru/backend-developer/",
+    "url3": "https://practicum.yandex.ru/java-developer/",
+    "url4": "https://practicum.yandex.ru/qa-engineer/",
+    "urlAll": "https://practicum.yandex.ru/programming-courses/"
+  },
+  {
+    "description":
+      "Курсы по анализу данных подойдут всем, кому интересно работать с цифрами и аналитикой.",
+    "cours1": "Аналитик данных",
+    "cours2": "Специалист по Data Science",
+    "cours3": "Инженер данных",
+    "cours4": "Аналитик данных буткемп",
+    "url1": "https://practicum.yandex.ru/data-analyst/",
+    "url2": "https://practicum.yandex.ru/data-scientist/",
+    "url3": "https://practicum.yandex.ru/data-engineer/",
+    "url4": "https://practicum.yandex.ru/bootcamp/",
+    "urlAll": "https://practicum.yandex.ru/catalog/data-analysis/"
+  },
+  {
+    "description":
+      "Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.",
+    "cours1": "Дизайнер интерфейсов",
+    "cours2": "UX-копирайтинг",
+    "cours3": "Графический дизайнер",
+    "cours4": "Коммерческий иллюстратор",
+    "url1": "https://practicum.yandex.ru/interface-designer/",
+    "url2": "https://practicum.yandex.ru/ux-copywriting/",
+    "url3": "https://practicum.yandex.ru/graphic-designer/",
+    "url4": "https://practicum.yandex.ru/commercial-illustrator/",
+    "urlAll": "https://practicum.yandex.ru/catalog/design/"
+  },
+  {
+    "description":
+      "Направление для всех, кто хочет учиться маркетингу в интернете. На курсах мы учим запускать рекламу и управлять рекламными кампаниями.",
+    "cours1": "Интернет-маркетолог",
+    "cours2": "Трафик-менеджер",
+    "cours3": 0,
+    "cours4": 0,
+    "url1": "https://practicum.yandex.ru/internet-marketing-start/",
+    "url2": "https://practicum.yandex.ru/traffic-manager/",
+    "url3": 0,
+    "url4": 0,
+    "urlAll": "https://practicum.yandex.ru/catalog/marketing/"
+  },
+  {
+    "description":
+      "Направление для тех, кто начинает или продолжает свой путь в сфере управления — людьми, проектами, продуктами, ресурсами.",
+    "cours1": "Критическое мышление",
+    "cours2": "Менеджер проектов",
+    "cours3": "Управление командой",
+    "cours4": "IT-рекрутер",
+    "url1": "https://practicum.yandex.ru/thinking/",
+    "url2": "https://practicum.yandex.ru/project-manager/",
+    "url3": "https://practicum.yandex.ru/team-management/",
+    "url4": "https://practicum.yandex.ru/it-recruiter/",
+    "urlAll": "https://practicum.yandex.ru/catalog/management/"
+  }
+]
