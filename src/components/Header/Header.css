@@ -1,10 +1,8 @@
 .header {
   top: 0;
-
+  padding: 0 12px;
   z-index: 99;
   background-color: var(--main-bg-color);
-  /* box-shadow: 0px 1px 10px #f8f8f8;
-  border-radius: 0px 0px 10px 10px; */
   position: sticky;
   box-shadow: 0px 1px 20px rgba(175, 175, 175, 0.25);
   border-radius: 0px 0px 10px 10px;
@@ -17,7 +15,6 @@
   justify-content: space-between;
   min-height: 77px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -101,11 +98,10 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .header {
     min-height: 60px;
     position: static;
-    padding: 0 12px;
   }
 
   .header__button-container {

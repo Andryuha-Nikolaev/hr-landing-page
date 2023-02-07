@@ -66,11 +66,11 @@ https://andryuha-nikolaev.github.io/hr-landing-page/
 - https://swiperjs.com/ - библиотека ускорила работу со слайдерами, позволила сэкономить время разработки. Использовалась в нескольких блоках.
 - https://www.npmjs.com/package/react-scroll - использовалась для настройки навигации по странице.
 
-### Ключевые точки для media queries:
+<!-- ### Ключевые точки для media queries:
 
 - 1440px
 - 576px
-- 375px
+- 375px -->
 
 ### Ссылки:
 
