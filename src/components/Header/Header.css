@@ -1,6 +1,6 @@
 .header {
   top: 0;
-  padding: 0 12px;
+  padding: 0 20px;
   z-index: 99;
   background-color: var(--main-bg-color);
   position: sticky;

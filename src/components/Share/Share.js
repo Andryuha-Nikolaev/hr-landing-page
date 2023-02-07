@@ -43,18 +43,22 @@ function Share({ openQuiz }) {
           >
             Посмотреть вакансии
           </Link>
+          <img className="share__image" src={laptop} alt="ноутбук" />
         </div>
-        <img className="share__image" src={laptop} alt="ноутбук" />
+
         <div className="share__mobile-section">
-          <p className="share__description">
-            Не знаете, какую вакансию выбрать? Мы можем помочь
+          <div className="share__contant">
+            <p className="share__description">
+              Не знаете, какую вакансию выбрать? Мы можем помочь
+            </p>
             <img
               className="share__mobile-button"
               src={shareArray}
               alt="стрелка"
               onClick={openQuiz}
             />
-          </p>
+          </div>
+
           <img
             src={shareImage}
             alt="абстракное изображение"
