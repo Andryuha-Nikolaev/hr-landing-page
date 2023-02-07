@@ -1,6 +1,7 @@
 .tasks {
   margin-top: 58px;
   margin-bottom: 44px;
+  padding: 0 20px;
 }
 
 .tasks__container {
@@ -90,6 +91,12 @@
   display: none;
 }
 
+@media screen and (max-width: 1279px) {
+  .tasks__image {
+    left: -10px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .tasks__image {
     max-width: 90px;
@@ -111,9 +118,9 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .tasks {
-    margin-top: 0px;
+    margin-top: 50px;
     margin-bottom: 0px;
     padding: 0 20px;
   }

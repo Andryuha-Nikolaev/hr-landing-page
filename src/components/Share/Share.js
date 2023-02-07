@@ -26,7 +26,7 @@ function Share({ openQuiz }) {
       <div className="share__container">
         <div className="share__wrap">
           <h1 className="share__header_type_color" id="changeText">
-            Делитесь своим опытом
+            Делитесь опытом
             <br />
             в&nbsp;
             {titleText[index % titleText.length]}
