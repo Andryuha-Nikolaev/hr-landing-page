@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hr-landing-page/static/css/main.214ccd5f.css",
-    "main.js": "/hr-landing-page/static/js/main.c7fae948.js",
+    "main.css": "/hr-landing-page/static/css/main.0017331b.css",
+    "main.js": "/hr-landing-page/static/js/main.6757294b.js",
     "static/media/head.svg": "/hr-landing-page/static/media/head.a8dc47d974043093d2bbca6bf59fb09b.svg",
     "static/media/laptop.svg": "/hr-landing-page/static/media/laptop.1bfd105e1a26a72822a3fff0a6a15c10.svg",
     "static/media/programmer.svg": "/hr-landing-page/static/media/programmer.6294ebd7e88f13d5513948a3a68d1a95.svg",
@@ -41,11 +41,11 @@
     "static/media/prev.svg": "/hr-landing-page/static/media/prev.e6e1a5afe00a2c423ff1.svg",
     "static/media/next.svg": "/hr-landing-page/static/media/next.3e0553f1e10286bc808a.svg",
     "static/media/arrow-down.svg": "/hr-landing-page/static/media/arrow-down.ee15821bff74b114f0ac.svg",
-    "main.214ccd5f.css.map": "/hr-landing-page/static/css/main.214ccd5f.css.map",
-    "main.c7fae948.js.map": "/hr-landing-page/static/js/main.c7fae948.js.map"
+    "main.0017331b.css.map": "/hr-landing-page/static/css/main.0017331b.css.map",
+    "main.6757294b.js.map": "/hr-landing-page/static/js/main.6757294b.js.map"
   },
   "entrypoints": [
-    "static/css/main.214ccd5f.css",
-    "static/js/main.c7fae948.js"
+    "static/css/main.0017331b.css",
+    "static/js/main.6757294b.js"
   ]
 }
