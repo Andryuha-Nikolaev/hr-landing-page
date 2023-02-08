@@ -1,6 +1,7 @@
 .vacancies {
   /* background-color: var(--color-block-bg-quaternary); */
   background-color: #eaeaea;
+  padding: 0 20px;
   padding-bottom: 60px;
 }
 
@@ -98,8 +99,9 @@
   content: "Для ";
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1023px) {
   .vacancies {
+    padding: 0;
     padding-bottom: 45px;
   }
   .vacancies__title {
