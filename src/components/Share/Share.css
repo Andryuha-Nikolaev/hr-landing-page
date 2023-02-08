@@ -2,6 +2,7 @@
   position: relative;
   min-height: 833px;
   overflow: hidden;
+  padding: 0 20px;
 }
 
 .share__container {
@@ -108,7 +109,7 @@
 
 @media screen and (max-width: 1023px) {
   .share {
-    min-height: 553px;
+    min-height: 453px;
   }
 
   .share__btn {
@@ -121,19 +122,19 @@
 
   .share__header,
   .share__header_type_color {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 42px;
+    line-height: 48px;
   }
 
   .share__image {
     width: 566px;
     height: 351px;
-    top: 190px;
-    right: 60px;
+    top: 90px;
+    right: -20px;
   }
 
   .share__wrap {
-    max-width: 100%;
+    /* max-width: 100%; */
   }
 }
 
