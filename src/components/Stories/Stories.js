@@ -1,30 +1,29 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper";
-import {
-  SlideNextButton,
-  SlidePrevButton,
-} from "../../utils/sliderButtons";
+import { SlideNextButton, SlidePrevButton } from "../../utils/sliderButtons";
 import "./Stories.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import images from "../../utils/constants";
 
 function Stories() {
-
   return (
     <section className="stories">
-      <h2 className="stories__header">Истории ребят из&nbsp;нашей&nbsp;команды</h2>
+      <h2 className="stories__header">
+        Истории ребят из&nbsp;нашей&nbsp;команды
+      </h2>
       <div className="stories-wrap">
         <Swiper
           direction={"horizontal"}
           slidesPerView={1}
           spaceBetween={30}
           mousewheel={true}
-          pagination={
-            { bulletClass: "slider__pag",
-            bulletActiveClass:"slider__pag_active" }
-          }
+          loop={true}
+          pagination={{
+            bulletClass: "slider__pag",
+            bulletActiveClass: "slider__pag_active",
+          }}
           modules={[Mousewheel, Pagination]}
           className="slider"
         >
@@ -45,7 +44,11 @@ function Stories() {
                   Наставник на факультете анализа данных
                 </p>
               </div>
-              <img className="slide__img" src={images.artem} alt="Артём Осадчий" />
+              <img
+                className="slide__img"
+                src={images.artem}
+                alt="Артём Осадчий"
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide className="slide">
@@ -63,7 +66,11 @@ function Stories() {
                   Наставник на факультете Data Science
                 </p>
               </div>
-              <img className="slide__img" src={images.tolya} alt="Толя Крестенко" />
+              <img
+                className="slide__img"
+                src={images.tolya}
+                alt="Толя Крестенко"
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide className="slide">
@@ -81,7 +88,11 @@ function Stories() {
                   Наставник на бэкенд факультете (Python)
                 </p>
               </div>
-              <img className="slide__img" src={images.kirill} alt="Кирилл Игнатьев" />
+              <img
+                className="slide__img"
+                src={images.kirill}
+                alt="Кирилл Игнатьев"
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide className="slide">
