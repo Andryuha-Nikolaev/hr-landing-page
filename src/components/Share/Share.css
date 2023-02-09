@@ -132,10 +132,6 @@
     top: 90px;
     right: -20px;
   }
-
-  .share__wrap {
-    /* max-width: 100%; */
-  }
 }
 
 @media screen and (max-width: 767px) {

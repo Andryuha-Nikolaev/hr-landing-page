@@ -1,3 +1,7 @@
+.footer {
+  padding: 0 20px;
+}
+
 .footer__container {
   margin: 0 auto;
   max-width: 1110px;
@@ -92,7 +96,7 @@
   gap: 25px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1023px) {
   .footer {
     padding: 0 20px 34px;
   }

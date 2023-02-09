@@ -1,13 +1,21 @@
 .join {
-  padding-top: 100px;
+  padding: 100px 20px 0;
+  overflow: hidden;
+  min-height: 766px;
+}
+
+.join__contant {
+  /* padding-top: 100px; */
+
   box-sizing: border-box;
-  max-width: 1110px;
+
   margin: 0 auto;
+  width: 100%;
+  max-width: 1110px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  min-height: 766px;
 }
 
 .join__header {
@@ -58,17 +66,18 @@
 }
 
 .join-btn {
-  width: 316px;
-  height: 71px;
-  border-radius: 100px;
+  width: 394px;
+  height: 60px;
+  border-radius: 120px;
   background-color: var(--color-button-primary);
   color: var(--color-text-secondary);
   border: none;
+  font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 24px;
+  line-height: 20px;
   position: absolute;
-  top: 58%;
+  top: 53%;
   left: 0;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
@@ -83,7 +92,7 @@
   width: 306px;
   height: 216px;
   position: absolute;
-  top: 9%;
+  top: -5%;
   right: -1%;
 }
 
@@ -98,12 +107,36 @@
   height: 532px;
   align-self: flex-end;
   margin-top: -13%;
-  margin-right: -5%;
+  margin-right: -4.5%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 576px) {
+@media screen and (max-width: 1100px) {
+  .join__img_programmer {
+    width: 618px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
   .join {
     min-height: 634px;
+    padding-top: 35px;
+  }
+
+  .join__contant {
+    justify-content: center;
+  }
+
+  .join__header {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .join {
+    /* min-height: 634px; */
+    min-height: 500px;
   }
   .join__header {
     font-size: 32px;
@@ -117,6 +150,7 @@
   }
 
   .join__text {
+    max-width: 100%;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -130,18 +164,29 @@
   }
 
   .join-btn {
-    width: 258px;
+    position: relative;
+    order: 2;
+    width: 257px;
     height: 50px;
-    margin-top: 50px;
-    top: 69%;
-    left: 11%;
+
+    /* top: 69%;
+    left: 30%; */
+    margin: 0;
+    margin: 0 auto;
+    margin-top: 35px;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .join {
+  /* .join {
     max-width: calc(100% - (20px * 2));
     align-items: center;
     padding-top: 35px;
+  } */
+}
+
+@media screen and (max-width: 500px) {
+  .join {
+    min-height: 634px;
   }
 }
