@@ -10,9 +10,12 @@ import images from "../../utils/constants";
 function Stories() {
   return (
     <section className="stories">
+      {/* <div className="stories__container"> */}
       <h2 className="stories__header">
         Истории ребят из&nbsp;нашей&nbsp;команды
       </h2>
+      {/* </div> */}
+
       <div className="stories-wrap">
         <Swiper
           direction={"horizontal"}
@@ -27,8 +30,6 @@ function Stories() {
           modules={[Mousewheel, Pagination]}
           className="slider"
         >
-          <SlidePrevButton />
-          <SlideNextButton />
           <SwiperSlide className="slide">
             <p className="slide__text">
               Из-за того, что я сам пришёл в аналитику из другой специальности,
@@ -38,6 +39,8 @@ function Stories() {
             </p>
 
             <div className="slide__wrap">
+              <SlidePrevButton />
+              <SlideNextButton />
               <div className="slide__info">
                 <h4 className="slide__name">Артём Осадчий</h4>
                 <p className="slide__role">
@@ -60,6 +63,8 @@ function Stories() {
             </p>
 
             <div className="slide__wrap">
+              <SlidePrevButton />
+              <SlideNextButton />
               <div className="slide__info">
                 <h4 className="slide__name">Толя Крестенко</h4>
                 <p className="slide__role">
@@ -82,6 +87,8 @@ function Stories() {
             </p>
 
             <div className="slide__wrap">
+              <SlidePrevButton />
+              <SlideNextButton />
               <div className="slide__info">
                 <h4 className="slide__name">Кирилл Игнатьев</h4>
                 <p className="slide__role">
@@ -104,6 +111,8 @@ function Stories() {
             </p>
 
             <div className="slide__wrap">
+              <SlidePrevButton />
+              <SlideNextButton />
               <div className="slide__info">
                 <h4 className="slide__name">Анастасия Лемова</h4>
                 <p className="slide__role">Наставница на дизайн факультете</p>
@@ -124,6 +133,8 @@ function Stories() {
             </p>
 
             <div className="slide__wrap">
+              <SlidePrevButton />
+              <SlideNextButton />
               <div className="slide__info">
                 <h4 className="slide__name">Зоя Король</h4>
                 <p className="slide__role">Наставница на факультете QA</p>
