@@ -1,0 +1,41 @@
+.vacancy {
+  height: 130px;
+  background-color: var(--color-block-bg-tertiary);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: opacity 0.4s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.vacancy:hover {
+  opacity: 0.8;
+}
+
+.vacancy__text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: var(--color-text-secondary);
+}
+
+.vacancy__arrow {
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+}
+
+.vacancy__capture {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  padding: 15px 0 14px 10px;
+}
+
+.vacansy__list-item {
+  border-radius: 20px;
+  background-color: var(--color-block-bg-primary);
+}

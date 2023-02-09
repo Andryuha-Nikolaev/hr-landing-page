@@ -1,0 +1,136 @@
+.vacancies {
+  /* background-color: var(--color-block-bg-quaternary); */
+  background-color: #eaeaea;
+  padding: 0 20px;
+  padding-bottom: 60px;
+}
+
+.vacancies__container {
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 0 40px;
+  background-color: var(--main-bg-color);
+  margin: 0 auto;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  padding-bottom: 35px;
+}
+
+.vacancies__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 35px;
+}
+
+.vacancies__button-container {
+  display: flex;
+}
+.vacancies__btn {
+  width: 270px;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: solid 4px var(--color-button-vacansy-inactive);
+  color: var(--color-text-quaternary);
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+  text-align: left;
+  background-color: transparent;
+  transition: opasity 0.3s ease-in-out;
+}
+
+.vacancies__btn:hover {
+  opacity: 0.6;
+}
+
+.vacancies__btn_active:hover {
+  opacity: 1;
+}
+
+.vacancies__btn_active {
+  border-bottom: solid 4px var(--color-button-vacansy-active);
+  color: var(--color-text-tertiary);
+  cursor: default;
+  order: -1;
+}
+
+.vacancies__list {
+  list-style: none;
+  padding-top: 35px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 20px;
+  row-gap: 30px;
+  justify-content: center;
+}
+
+.vacancies__see-all {
+  width: 315px;
+  min-height: 60px;
+  background-color: var(--color-button-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 120px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  color: var(--color-text-secondary);
+  margin: 0 auto;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.vacancies__see-all:hover {
+  opacity: 0.8;
+}
+.vacancies__btn_active::before {
+  content: "Для ";
+}
+
+@media (max-width: 1023px) {
+  .vacancies {
+    padding: 0;
+    padding-bottom: 45px;
+  }
+  .vacancies__title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .vacancies__btn {
+    width: max-content;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0px;
+  }
+
+  .vacancies__btn_active {
+    width: max-content;
+    margin-right: 10px;
+  }
+
+  .vacancies__container {
+    padding: 0 20px;
+    padding-bottom: 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .vacancies__list {
+    padding-bottom: 30px;
+    row-gap: 20px;
+  }
+}
